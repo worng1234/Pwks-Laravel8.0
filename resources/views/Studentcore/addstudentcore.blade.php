@@ -168,9 +168,10 @@
 					</div>
 				</div>
 
-                @livewire('addstudentcore-multi-step')
+                    @livewire('addstudentcore-multi-step')
 
-
+                </div>
+                    </div>
 				<!-- สิ้นสุดเนื้อหา -->
 			<!-- เริ่ม Footer -->
 			<footer class="footer">
