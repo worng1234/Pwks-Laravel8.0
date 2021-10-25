@@ -24,8 +24,8 @@ Route::view('/AddstudentCore','Studentcore.addstudentcore');
 //NewstudentRegister
 Route::get('/AgreeMentNewstudentRegisterM1', [newstudentm1Controller::class, 'agreementNewstudentm1'] );
 Route::get('/AgreeMentNewstudentRegisterM4', [newstudentm1Controller::class, 'agreementNewstudentm4'] );
-Route::post('/NewstudentRegisterM1', [newstudentm1Controller::class, 'Newstudentm1'] );
-Route::post('/NewstudentRegisterM4', [newstudentm1Controller::class, 'Newstudentm4'] );
+Route::view('/NewstudentRegisterM1', 'Newstudent.newstudentm1');
+Route::view('/NewstudentRegisterM4', 'Newstudent.newstudentm4');
 Route::get('/SortNewstudentM1', [newstudentm1Controller::class, 'Sortnewstudentm1'] );
 Route::get('/SortNewstudentM4', [newstudentm1Controller::class, 'Sortnewstudentm4'] );
 Route::get('/NewstudentM1byID', [newstudentm1Controller::class, 'Newstudentm1byID'] );

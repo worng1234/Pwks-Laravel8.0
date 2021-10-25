@@ -150,34 +150,34 @@ class newstudentm1Controller extends Controller
     }
 
 
-    public function up(Request $request){
-        $post = new File();
-        if($request->hasFile('image')){
-            $completeFileName = $request->file('image')->getClientOriginalName();
-            $fileNameOnly = pathinfo($completeFileName, PATHINFO_FILENAME);
-            $ext = $request->file('image')->getClientOriginalExtension();
-            $compPic = str_replace(' ', '_', $fileNameOnly). '-'. rand(). '_'. time(). '.'. $ext;
-            $path = $request->file('image')->storeAs('public/newstudentm1PIC', $compPic);
-            $post->image = $compPic;
-            $post->idNumber = $request['idNumber'];
+    // public function up(Request $request){
+    //     $post = new File();
+    //     if($request->hasFile('image')){
+    //         $completeFileName = $request->file('image')->getClientOriginalName();
+    //         $fileNameOnly = pathinfo($completeFileName, PATHINFO_FILENAME);
+    //         $ext = $request->file('image')->getClientOriginalExtension();
+    //         $compPic = str_replace(' ', '_', $fileNameOnly). '-'. rand(). '_'. time(). '.'. $ext;
+    //         $path = $request->file('image')->storeAs('public/newstudentm1PIC', $compPic);
+    //         $post->image = $compPic;
+    //         $post->idNumber = $request['idNumber'];
 
-        }
-        if($post->save()){
-            return ['status' => true, 'message' => 'Post Saved Successfully'];
-        }else {
-            return ['status' => false, 'message' => 'Post Somthing Wented Wrong'];
-        }
+    //     }
+    //     if($post->save()){
+    //         return ['status' => true, 'message' => 'Post Saved Successfully'];
+    //     }else {
+    //         return ['status' => false, 'message' => 'Post Somthing Wented Wrong'];
+    //     }
 
-    }
+    // }
 
-    public function idnumber(Request $request){
-        $data['idNumber'] = $request['idNumber'];
-        File::created($data);
-        return response()->json([
-            'message' => "Successfully created",
-            'success' => true
-        ], 200);
-    }
+    // public function idnumber(Request $request){
+    //     $data['idNumber'] = $request['idNumber'];
+    //     File::created($data);
+    //     return response()->json([
+    //         'message' => "Successfully created",
+    //         'success' => true
+    //     ], 200);
+    // }
     /**
      * Display the specified resource.
      *
