@@ -34,7 +34,39 @@
                                             <label>แผนการเรียน</label>
                                             <select class="form-control" id="formGroupDefaultSelect" wire:model="student_major">
                                                 <option>เลือก</option>
-                                                <option value="1">วิทย์ - คณิต</option>
+                                                <option value="วิทยาศาสตร์ - คณิตศาสตร์">วิทยาศาสตร์ - คณิตศาสตร์</option>
+                                                <option value="ศิลป์ - คำนวณ">ศิลป์ - คำนวณ</option>
+                                                <option value="ศิลป์ - จีน">ศิลป์ - จีน</option>
+                                                <option value="พาณิชย์">พาณิชย์</option>
+                                                <option value="ศิลป์ - อังกฤษ">ศิลป์ - อังกฤษ</option>
+                                                <option value="ศิลปะ">ศิลปะ</option>
+                                                <option value="เกษตร">เกษตร</option>
+                                                <option value="ปวช.">ปวช.</option>
+                                                <option value="คหกรรม">คหกรรม</option>
+                                                <option value="วิทยาศาสตร์ - คอมพิวเตอร์">วิทยาศาสตร์ - คอมพิวเตอร์</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-2">
+                                        <div class="form-group form-group-default">
+                                            <label>ระดับชั้น</label>
+                                            <select class="form-control" id="formGroupDefaultSelect" wire:model="student_class">
+                                                <option>เลือก</option>
+                                                <option value="มัธยมศึกษาปีที่ 1">มัธยมศึกษาปีที่ 1</option>
+                                                <option value="มัธยมศึกษาปีที่ 2">มัธยมศึกษาปีที่ 2</option>
+                                                <option value="มัธยมศึกษาปีที่ 3">มัธยมศึกษาปีที่ 3</option>
+                                                <option value="มัธยมศึกษาปีที่ 4">มัธยมศึกษาปีที่ 4</option>
+                                                <option value="มัธยมศึกษาปีที่ 5">มัธยมศึกษาปีที่ 5</option>
+                                                <option value="มัธยมศึกษาปีที่ 6">มัธยมศึกษาปีที่ 6</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-2">
+                                        <div class="form-group form-group-default">
+                                            <label>ลำดับห้อง</label>
+                                            <select class="form-control" id="formGroupDefaultSelect" wire:model="student_room">
+                                                <option>เลือก</option>
+                                                <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
@@ -44,38 +76,6 @@
                                                 <option value="8">8</option>
                                                 <option value="9">9</option>
                                                 <option value="10">10</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-md-2">
-                                        <div class="form-group form-group-default">
-                                            <label>ระดับชั้น</label>
-                                            <select class="form-control" id="formGroupDefaultSelect" wire:model="student_class">
-                                                <option>เลือก</option>
-                                                <option value="m1">มัธยมศึกษาปีที่ 1</option>
-                                                <option value="m2">มัธยมศึกษาปีที่ 2</option>
-                                                <option value="m3">มัธยมศึกษาปีที่ 3</option>
-                                                <option value="m4">มัธยมศึกษาปีที่ 4</option>
-                                                <option value="m5">มัธยมศึกษาปีที่ 5</option>
-                                                <option value="m6">มัธยมศึกษาปีที่ 6</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-md-2">
-                                        <div class="form-group form-group-default">
-                                            <label>ลำดับห้อง</label>
-                                            <select class="form-control" id="formGroupDefaultSelect" wire:model="student_room">
-                                                <option>เลือก</option>
-                                                <option value="r1">1</option>
-                                                <option value="r2">2</option>
-                                                <option value="r3">3</option>
-                                                <option value="r4">4</option>
-                                                <option value="r5">5</option>
-                                                <option value="r6">6</option>
-                                                <option value="r7">7</option>
-                                                <option value="r8">8</option>
-                                                <option value="r9">9</option>
-                                                <option value="r10">10</option>
                                             </select>
                                         </div>
                                     </div>
@@ -94,10 +94,10 @@
                                             <label>คำนำหน้าชื่อ</label>
                                             <select class="form-control" id="formGroupDefaultSelect" wire:model="prename">
                                                 <option>เลือก</option>
-                                                <option value="prename1">เด็กชาย</option>
-                                                <option value="prename2">เด็กหญิง</option>
-                                                <option value="prename3">นาย</option>
-                                                <option value="prename4">นางสาว</option>
+                                                <option value="เด็กชาย">เด็กชาย</option>
+                                                <option value="เด็กหญิง">เด็กหญิง</option>
+                                                <option value="นาย">นาย</option>
+                                                <option value="นางสาว">นางสาว</option>
                                             </select>
                                         </div>
                                     </div>
@@ -192,18 +192,18 @@
                                             <label>เดือน:</label>
                                             <select class="form-control" id="formGroupDefaultSelect" wire:model="birth_month">
                                                 <option>เลือก</option>
-                                                <option value="january">มกราคม</option>
-                                                <option value="fabuary">กุมภาพันธ์</option>
-                                                <option value="march">มีนาคม</option>
-                                                <option value="april">เมษายน</option>
-                                                <option value="may">พฤษภาคม</option>
-                                                <option value="june">มิถุนายน</option>
-                                                <option value="july">กรกฎาคม</option>
-                                                <option value="orcas">สิงหาคม</option>
-                                                <option value="sebtember">กันยายน</option>
-                                                <option value="october">ตุลาคม</option>
-                                                <option value="november">พฤษจิกายน</option>
-                                                <option value="december">ธันวาคม</option>
+                                                <option value="มกราคม">มกราคม</option>
+                                                <option value="กุมภาพันธ์">กุมภาพันธ์</option>
+                                                <option value="มีนาคม">มีนาคม</option>
+                                                <option value="เมษายน">เมษายน</option>
+                                                <option value="พฤษภาคม">พฤษภาคม</option>
+                                                <option value="มิถุนายน">มิถุนายน</option>
+                                                <option value="กรกฎาคม">กรกฎาคม</option>
+                                                <option value="สิงหาคม">สิงหาคม</option>
+                                                <option value="กันยายน">กันยายน</option>
+                                                <option value="ตุลาคม">ตุลาคม</option>
+                                                <option value="พฤษจิกายน">พฤษจิกายน</option>
+                                                <option value="ธันวาคม">ธันวาคม</option>
                                             </select>
                                         </div>
                                     </div>
@@ -212,37 +212,37 @@
                                             <label>วัน:</label>
                                             <select class="form-control" id="formGroupDefaultSelect" wire:model="birth_day">
                                                 <option>เลือก</option>
-                                                <option value="d1">1</option>
-                                                <option value="d2">2</option>
-                                                <option value="d3">3</option>
-                                                <option value="d4">4</option>
-                                                <option value="d5">5</option>
-                                                <option value="d6">6</option>
-                                                <option value="d7">7</option>
-                                                <option value="d8">8</option>
-                                                <option value="d9">9</option>
-                                                <option value="d10">10</option>
-                                                <option value="d11">11</option>
-                                                <option value="d12">12</option>
-                                                <option value="d13">13</option>
-                                                <option value="d14">14</option>
-                                                <option value="d15">15</option>
-                                                <option value="d16">16</option>
-                                                <option value="d17">17</option>
-                                                <option value="d18">18</option>
-                                                <option value="d19">19</option>
-                                                <option value="d20">20</option>
-                                                <option value="d21">21</option>
-                                                <option value="d22">22</option>
-                                                <option value="d23">23</option>
-                                                <option value="d24">24</option>
-                                                <option value="d25">25</option>
-                                                <option value="d26">26</option>
-                                                <option value="d27">27</option>
-                                                <option value="d28">28</option>
-                                                <option value="d29">29</option>
-                                                <option value="d30">30</option>
-                                                <option value="d31">31</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                                <option value="25">25</option>
+                                                <option value="26">26</option>
+                                                <option value="27">27</option>
+                                                <option value="28">28</option>
+                                                <option value="29">29</option>
+                                                <option value="30">30</option>
+                                                <option value="31">31</option>
                                             </select>
                                         </div>
                                     </div>
@@ -259,8 +259,8 @@
                                             <label>เพศสภาพ</label>
                                             <select class="form-control" id="formGroupDefaultSelect" wire:model="gender">
                                                 <option>เลือก</option>
-                                                <option value="male">ชาย</option>
-                                                <option value="female">หญิง</option>
+                                                <option value="ชาย">ชาย</option>
+                                                <option value="หญิง">หญิง</option>
                                             </select>
                                         </div>
                                     </div>
@@ -269,10 +269,10 @@
                                             <label>หมู่เลือด</label>
                                             <select class="form-control" id="formGroupDefaultSelect" wire:model="bloodgroup">
                                                 <option>เลือก</option>
-                                                <option value="a">A</option>
-                                                <option value="b">B</option>
-                                                <option value="ab">AB</option>
-                                                <option value="o">O</option>
+                                                <option value="A">A</option>
+                                                <option value="B">B</option>
+                                                <option value="AB">AB</option>
+                                                <option value="O">O</option>
                                             </select>
                                         </div>
                                     </div>
@@ -412,11 +412,11 @@
                                         <div class="col-sm-6 col-md-12">
                                             <div class="form-check">
                                                 <label class="form-radio-label">
-                                                    <input class="form-radio-input" type="radio" name="optionsRadios" value="ที่อยู่ตามทะเบียนบ้าน" wire:model="address_now" id="ที่อยู่ตามทะเบียนบ้าน">
+                                                    <input class="form-radio-input" type="radio" name="optionsRadios" value="ที่อยู่ตามทะเบียนบ้าน" wire:model="address_now" >
                                                     <span class="form-radio-sign">ที่อยู่ตามทะเบียนบ้าน</span>
                                                 </label>
                                                 <label class="form-radio-label ml-1">
-                                                    <input class="form-radio-input" type="radio" name="optionsRadios" value="ที่อยู่อื่น" wire:model="address_now" id="ที่อยู่อื่น">
+                                                    <input class="form-radio-input" type="radio" name="optionsRadios" value="ที่อยู่อื่น" wire:model="address_now" >
                                                     <span class="form-radio-sign">ที่อยู่อื่น (โปรดระบุ)*</span>
                                                 </label>
                                             </div>
@@ -717,11 +717,11 @@
                                                         <label>การเดินทางมาโรงเรียน</label>
                                                         <select class="form-control" id="formGroupDefaultSelect" wire:model="go_school">
                                                             <option>เลือก</option>
-                                                            <option value="gs1">เดินเท้า</option>
-                                                            <option value="gs2">รถจักรยาน</option>
-                                                            <option value="gs3">รถจักรยานยนต์</option>
-                                                            <option value="gs4">รถเดือน</option>
-                                                            <option value="gs5">พ่อแม่หรือญาติมาส่ง</option>
+                                                            <option value="เดินเท้า">เดินเท้า</option>
+                                                            <option value="รถจักรยาน">รถจักรยาน</option>
+                                                            <option value="รถจักรยานยนต์">รถจักรยานยนต์</option>
+                                                            <option value="รถเดือน">รถเดือน</option>
+                                                            <option value="พ่อแม่หรือญาติมาส่ง">พ่อแม่หรือญาติมาส่ง</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -753,19 +753,19 @@
                                                     <div class="form-group">
                                                         <div class="selectgroup selectgroup-pills">
                                                             <label class="selectgroup-item">
-                                                                <input type="checkbox" name="tool" value="g1" class="selectgroup-input" wire:model="gadject" id="มือถือ/สมาร์ทโฟน">
+                                                                <input type="checkbox" name="tool" value="มือถือ/สมาร์ทโฟน" class="selectgroup-input" wire:model="gadject" id="มือถือ/สมาร์ทโฟน">
                                                                 <span class="selectgroup-button">มือถือ/สมาร์ทโฟน</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="checkbox" name="tool" value="g2" class="selectgroup-input" wire:model="gadject" id="แท็บเล็ต">
+                                                                <input type="checkbox" name="tool" value="แท็บเล็ต" class="selectgroup-input" wire:model="gadject" id="แท็บเล็ต">
                                                                 <span class="selectgroup-button">แท็บเล็ต</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="checkbox" name="tool" value="g3" class="selectgroup-input" wire:model="gadject" id="โน๊ตบุ๊ค">
+                                                                <input type="checkbox" name="tool" value="โน๊ตบุ๊ค" class="selectgroup-input" wire:model="gadject" id="โน๊ตบุ๊ค">
                                                                 <span class="selectgroup-button">โน๊ตบุ๊ค</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="checkbox" name="tool" value="g4" class="selectgroup-input" wire:model="gadject" id="คอมพิวเตอร์แบบตั้งโต๊ะ">
+                                                                <input type="checkbox" name="tool" value="คอมพิวเตอร์แบบตั้งโต๊ะ" class="selectgroup-input" wire:model="gadject" id="คอมพิวเตอร์แบบตั้งโต๊ะ">
                                                                 <span class="selectgroup-button">คอมพิวเตอร์แบบตั้งโต๊ะ</span>
                                                             </label>
                                                         </div>
@@ -776,11 +776,11 @@
                                                     <div class="form-group">
                                                         <div class="selectgroup selectgroup-secondary selectgroup-pills">
                                                             <label class="selectgroup-item">
-                                                                <input type="radio" name="net" value="yes" class="selectgroup-input" wire:model="internet" id="อินเตอร์เน็ตไร้สาย">
+                                                                <input type="radio" name="net" value="อินเตอร์เน็ตไร้สาย" class="selectgroup-input" wire:model="internet" id="อินเตอร์เน็ตไร้สาย">
                                                                 <span class="selectgroup-button">อินเตอร์เน็ตไร้สาย</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="radio" name="net" value="no" class="selectgroup-input" wire:model="internet" id="อินเตอร์เน็ตสาย">
+                                                                <input type="radio" name="net" value="อินเตอร์เน็ตสาย" class="selectgroup-input" wire:model="internet" id="อินเตอร์เน็ตสาย">
                                                                 <span class="selectgroup-button">อินเตอร์เน็ตสาย</span>
                                                             </label>
                                                         </div>
@@ -796,16 +796,16 @@
                                                         <label>ความพิการ</label>
                                                         <select class="form-control" id="formGroupDefaultSelect" wire:model="disabled">
                                                             <option>เลือก</option>
-                                                            <option value="ds1">ไม่มี</option>
-                                                            <option value="ds2">การมองเห็น</option>
-                                                            <option value="ds3">การได้ยิน</option>
-                                                            <option value="ds4">สติปัญญา</option>
-                                                            <option value="ds5">ร่างกาย/สุขภาพ</option>
-                                                            <option value="ds6">การเรียนรู้</option>
-                                                            <option value="ds7">การพูด/ภาษา</option>
-                                                            <option value="ds8">พฤติกรรม/อารมณ์</option>
-                                                            <option value="ds9">ออทิสติค</option>
-                                                            <option value="ds10">พิการซ้ำซ้อน</option>
+                                                            <option value="ไม่มี">ไม่มี</option>
+                                                            <option value="การมองเห็น">การมองเห็น</option>
+                                                            <option value="การได้ยิน">การได้ยิน</option>
+                                                            <option value="สติปัญญา">สติปัญญา</option>
+                                                            <option value="ร่างกาย/สุขภาพ">ร่างกาย/สุขภาพ</option>
+                                                            <option value="การเรียนรู้">การเรียนรู้</option>
+                                                            <option value="การพูด/ภาษา">การพูด/ภาษา</option>
+                                                            <option value="พฤติกรรม/อารมณ์">พฤติกรรม/อารมณ์</option>
+                                                            <option value="ออทิสติค">ออทิสติค</option>
+                                                            <option value="พิการซ้ำซ้อน">พิการซ้ำซ้อน</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -814,18 +814,18 @@
                                                         <label>ความด้อยโอกาส</label>
                                                         <select class="form-control" id="formGroupDefaultSelect" wire:model="unfortuned">
                                                             <option>เลือก</option>
-                                                            <option value="un1">ไม่มี</option>
-                                                            <option value="un2">ถูกบังคับขายแรงงาน</option>
-                                                            <option value="un3">อยู่ในธุรกิจทางเพศ</option>
-                                                            <option value="un4">ถูกทอดทิ้ง</option>
-                                                            <option value="un5">เด็กเร่ร่อน</option>
-                                                            <option value="un6">ได้รับผลกระทบจากเอดส์</option>
-                                                            <option value="un7">ชนกลุ่มน้อย</option>
-                                                            <option value="un8">ถูกทำร้ายทารุณ</option>
-                                                            <option value="un9">เด็กยากจน</option>
-                                                            <option value="un10">เด็กที่มีปัญหาเกี่ยวกับยาเสพติด</option>
-                                                            <option value="un11">เด็กกำพร้า</option>
-                                                            <option value="un12">ทำงานรับผิดชอบตนเองและครอบครัว</option>
+                                                            <option value="ไม่มี">ไม่มี</option>
+                                                            <option value="ถูกบังคับขายแรงงาน">ถูกบังคับขายแรงงาน</option>
+                                                            <option value="อยู่ในธุรกิจทางเพศ">อยู่ในธุรกิจทางเพศ</option>
+                                                            <option value="ถูกทอดทิ้ง">ถูกทอดทิ้ง</option>
+                                                            <option value="เด็กเร่ร่อน">เด็กเร่ร่อน</option>
+                                                            <option value="ได้รับผลกระทบจากเอดส์">ได้รับผลกระทบจากเอดส์</option>
+                                                            <option value="ชนกลุ่มน้อย">ชนกลุ่มน้อย</option>
+                                                            <option value="ถูกทำร้ายทารุณ">ถูกทำร้ายทารุณ</option>
+                                                            <option value="เด็กยากจน">เด็กยากจน</option>
+                                                            <option value="เด็กที่มีปัญหาเกี่ยวกับยาเสพติด">เด็กที่มีปัญหาเกี่ยวกับยาเสพติด</option>
+                                                            <option value="เด็กกำพร้า">เด็กกำพร้า</option>
+                                                            <option value="ทำงานรับผิดชอบตนเองและครอบครัว">ทำงานรับผิดชอบตนเองและครอบครัว</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -836,23 +836,23 @@
                                                     <div class="form-group">
                                                         <div class="selectgroup selectgroup-pills">
                                                             <label class="selectgroup-item">
-                                                                <input type="checkbox" name="lack" value="1" class="selectgroup-input" wire:model="lack" id="ขาดแคลนแบบเรียน">
+                                                                <input type="checkbox" name="lack" value="ขาดแคลนแบบเรียน" class="selectgroup-input" wire:model="lack" id="ขาดแคลนแบบเรียน">
                                                                 <span class="selectgroup-button">ขาดแคลนแบบเรียน</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="checkbox" name="lack" value="2" class="selectgroup-input" wire:model="lack" id="ขาดแคลนเครื่องเขียน">
+                                                                <input type="checkbox" name="lack" value="ขาดแคลนเครื่องเขียน" class="selectgroup-input" wire:model="lack" id="ขาดแคลนเครื่องเขียน">
                                                                 <span class="selectgroup-button">ขาดแคลนเครื่องเขียน</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="checkbox" name="lack" value="3" class="selectgroup-input" wire:model="lack" id="ขาดแคลนอาหารกลางวัน">
+                                                                <input type="checkbox" name="lack" value="ขาดแคลนอาหารกลางวัน" class="selectgroup-input" wire:model="lack" id="ขาดแคลนอาหารกลางวัน">
                                                                 <span class="selectgroup-button">ขาดแคลนอาหารกลางวัน</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="checkbox" name="lack" value="4" class="selectgroup-input" wire:model="lack" id="ขาดแคลนเครื่องแบบ">
+                                                                <input type="checkbox" name="lack" value="ขาดแคลนเครื่องแบบ" class="selectgroup-input" wire:model="lack" id="ขาดแคลนเครื่องแบบ">
                                                                 <span class="selectgroup-button">ขาดแคลนเครื่องแบบ</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="checkbox" name="lack" value="5" class="selectgroup-input" wire:model="lack" id="ไม่ขาดแคลน">
+                                                                <input type="checkbox" name="lack" value="ไม่ขาดแคลน" class="selectgroup-input" wire:model="lack" id="ไม่ขาดแคลน">
                                                                 <span class="selectgroup-button">ไม่ขาดแคลน</span>
                                                             </label>
                                                         </div>
@@ -865,11 +865,11 @@
                                                     <div class="form-group">
                                                         <div class="selectgroup selectgroup-secondary selectgroup-pills">
                                                             <label class="selectgroup-item">
-                                                                <input type="radio" name="1" value="yes" class="selectgroup-input" wire:model="friend_drug" id="ใช่">
+                                                                <input type="radio" name="1" value="ใช่" class="selectgroup-input" wire:model="friend_drug" id="ใช่">
                                                                 <span class="selectgroup-button">ใช่</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="radio" name="1" value="no" class="selectgroup-input" wire:model="friend_drug"id="ไม่ใช่">
+                                                                <input type="radio" name="1" value="ไม่ใช่" class="selectgroup-input" wire:model="friend_drug"id="ไม่ใช่">
                                                                 <span class="selectgroup-button">ไม่ใช่</span>
                                                             </label>
                                                         </div>
@@ -880,11 +880,11 @@
                                                     <div class="form-group">
                                                         <div class="selectgroup selectgroup-secondary selectgroup-pills">
                                                             <label class="selectgroup-item">
-                                                                <input type="radio" name="2" value="yes" class="selectgroup-input" wire:model="sell_drug" id="ใช่">
+                                                                <input type="radio" name="2" value="ใช่" class="selectgroup-input" wire:model="sell_drug" id="ใช่">
                                                                 <span class="selectgroup-button">ใช่</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="radio" name="2" value="no" class="selectgroup-input" wire:model="sell_drug" id="ไม่ใช่">
+                                                                <input type="radio" name="2" value="ไม่ใช่" class="selectgroup-input" wire:model="sell_drug" id="ไม่ใช่">
                                                                 <span class="selectgroup-button">ไม่ใช่</span>
                                                             </label>
                                                         </div>
@@ -895,11 +895,11 @@
                                                     <div class="form-group">
                                                         <div class="selectgroup selectgroup-secondary selectgroup-pills">
                                                             <label class="selectgroup-item">
-                                                                <input type="radio" name="3" value="yes" class="selectgroup-input" wire:model="sexual" id="ใช่">
+                                                                <input type="radio" name="3" value="ใช่" class="selectgroup-input" wire:model="sexual" id="ใช่">
                                                                 <span class="selectgroup-button">ใช่</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="radio" name="3" value="no" class="selectgroup-input" wire:model="sexual" id="ไม่ใช่">
+                                                                <input type="radio" name="3" value="ไม่ใช่" class="selectgroup-input" wire:model="sexual" id="ไม่ใช่">
                                                                 <span class="selectgroup-button">ไม่ใช่</span>
                                                             </label>
                                                         </div>
@@ -910,11 +910,11 @@
                                                     <div class="form-group">
                                                         <div class="selectgroup selectgroup-secondary selectgroup-pills">
                                                             <label class="selectgroup-item">
-                                                                <input type="radio" name="4" value="yes" class="selectgroup-input" wire:model="not_parent" id="ใช่">
+                                                                <input type="radio" name="4" value="ใช่" class="selectgroup-input" wire:model="not_parent" id="ใช่">
                                                                 <span class="selectgroup-button">ใช่</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="radio" name="4" value="no" class="selectgroup-input" wire:model="not_parent" id="ไม่ใช่">
+                                                                <input type="radio" name="4" value="ไม่ใช่" class="selectgroup-input" wire:model="not_parent" id="ไม่ใช่">
                                                                 <span class="selectgroup-button">ไม่ใช่</span>
                                                             </label>
                                                         </div>
@@ -925,11 +925,11 @@
                                                     <div class="form-group">
                                                         <div class="selectgroup selectgroup-secondary selectgroup-pills">
                                                             <label class="selectgroup-item">
-                                                                <input type="radio" name="5" value="yes" class="selectgroup-input" wire:model="dark_travel" id="ใช่">
+                                                                <input type="radio" name="5" value="ใช่" class="selectgroup-input" wire:model="dark_travel" id="ใช่">
                                                                 <span class="selectgroup-button">ใช่</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="radio" name="5" value="no" class="selectgroup-input" wire:model="dark_travel" id="ไม่ใช่">
+                                                                <input type="radio" name="5" value="ไม่ใช่" class="selectgroup-input" wire:model="dark_travel" id="ไม่ใช่">
                                                                 <span class="selectgroup-button">ไม่ใช่</span>
                                                             </label>
                                                         </div>
@@ -940,11 +940,11 @@
                                                     <div class="form-group">
                                                         <div class="selectgroup selectgroup-secondary selectgroup-pills">
                                                             <label class="selectgroup-item">
-                                                                <input type="radio" name="6" value="yes" class="selectgroup-input" wire:model="sexual_harrasment" id="ใช่">
+                                                                <input type="radio" name="6" value="ใช่" class="selectgroup-input" wire:model="sexual_harrasment" id="ใช่">
                                                                 <span class="selectgroup-button">ใช่</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="radio" name="6" value="no" class="selectgroup-input" wire:model="sexual_harrasment" id="ไม่ใช่">
+                                                                <input type="radio" name="6" value="ไม่ใช่" class="selectgroup-input" wire:model="sexual_harrasment" id="ไม่ใช่">
                                                                 <span class="selectgroup-button">ไม่ใช่</span>
                                                             </label>
                                                         </div>
@@ -957,11 +957,11 @@
                                                     <div class="form-group">
                                                         <div class="selectgroup selectgroup-secondary selectgroup-pills">
                                                             <label class="selectgroup-item">
-                                                                <input type="radio" name="world" value="yes" class="selectgroup-input" wire:model="cute_world" id="น่าอยู่">
+                                                                <input type="radio" name="world" value="น่าอยู่" class="selectgroup-input" wire:model="cute_world" id="น่าอยู่">
                                                                 <span class="selectgroup-button">น่าอยู่</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="radio" name="world" value="no" class="selectgroup-input" wire:model="cute_world" id="ไม่น่าอยู่">
+                                                                <input type="radio" name="world" value="ไม่น่าอยู่" class="selectgroup-input" wire:model="cute_world" id="ไม่น่าอยู่">
                                                                 <span class="selectgroup-button">ไม่น่าอยู่</span>
                                                             </label>
                                                         </div>
@@ -972,11 +972,11 @@
                                                     <div class="form-group">
                                                         <div class="selectgroup selectgroup-secondary selectgroup-pills">
                                                             <label class="selectgroup-item">
-                                                                <input type="radio" name="heart" value="yes" class="selectgroup-input" wire:model="rich_man" id="มีค่า">
+                                                                <input type="radio" name="heart" value="มีค่า" class="selectgroup-input" wire:model="rich_man" id="มีค่า">
                                                                 <span class="selectgroup-button">มีค่า</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="radio" name="heart" value="no" class="selectgroup-input" wire:model="rich_man" id="ไม่มีค่า">
+                                                                <input type="radio" name="heart" value="ไม่มีค่า" class="selectgroup-input" wire:model="rich_man" id="ไม่มีค่า">
                                                                 <span class="selectgroup-button">ไม่มีค่า</span>
                                                             </label>
                                                         </div>
@@ -1003,43 +1003,43 @@
                                                     <div class="form-group">
                                                         <div class="selectgroup selectgroup-pills">
                                                             <label class="selectgroup-item">
-                                                                <input type="checkbox" name="issue" value="1" class="selectgroup-input" wire:model="problem" id="ครอบครัว">
+                                                                <input type="checkbox" name="issue" value="ครอบครัว" class="selectgroup-input" wire:model="problem" id="ครอบครัว">
                                                                 <span class="selectgroup-button">ครอบครัว</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="checkbox" name="issue" value="2" class="selectgroup-input" wire:model="problem" id="การเรียน">
+                                                                <input type="checkbox" name="issue" value="การเรียน" class="selectgroup-input" wire:model="problem" id="การเรียน">
                                                                 <span class="selectgroup-button">การเรียน</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="checkbox" name="issue" value="3" class="selectgroup-input" wire:model="problem" id="สุขภาพ">
+                                                                <input type="checkbox" name="issue" value="สุขภาพ" class="selectgroup-input" wire:model="problem" id="สุขภาพ">
                                                                 <span class="selectgroup-button">สุขภาพ</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="checkbox" name="issue" value="4" class="selectgroup-input" wire:model="problem" id="เศรษฐกิจ">
+                                                                <input type="checkbox" name="issue" value="เศรษฐกิจ" class="selectgroup-input" wire:model="problem" id="เศรษฐกิจ">
                                                                 <span class="selectgroup-button">เศรษฐกิจ</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="checkbox" name="issue" value="5" class="selectgroup-input" wire:model="problem" id="การคบเพื่อน">
+                                                                <input type="checkbox" name="issue" value="การคบเพื่อน" class="selectgroup-input" wire:model="problem" id="การคบเพื่อน">
                                                                 <span class="selectgroup-button">การคบเพื่อน</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="checkbox" name="issue" value="6" class="selectgroup-input" wire:model="problem" id="การวางตัวในสังคม">
+                                                                <input type="checkbox" name="issue" value="การวางตัวในสังคม" class="selectgroup-input" wire:model="problem" id="การวางตัวในสังคม">
                                                                 <span class="selectgroup-button">การวางตัวในสังคม</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="checkbox" name="issue" value="7" class="selectgroup-input" wire:model="problem" id="การใช้เวลาว่าง">
+                                                                <input type="checkbox" name="issue" value="การใช้เวลาว่าง" class="selectgroup-input" wire:model="problem" id="การใช้เวลาว่าง">
                                                                 <span class="selectgroup-button">การใช้เวลาว่าง</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="checkbox" name="issue" value="8" class="selectgroup-input" wire:model="problem" id="การเลือกอาชีพ">
+                                                                <input type="checkbox" name="issue" value="การเลือกอาชีพ" class="selectgroup-input" wire:model="problem" id="การเลือกอาชีพ">
                                                                 <span class="selectgroup-button">การเลือกอาชีพ</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="checkbox" name="issue" value="9" class="selectgroup-input" wire:model="problem" id="การเลือกศึกษาต่อ">
+                                                                <input type="checkbox" name="issue" value="การเลือกศึกษาต่อ" class="selectgroup-input" wire:model="problem" id="การเลือกศึกษาต่อ">
                                                                 <span class="selectgroup-button">การเลือกศึกษาต่อ</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="checkbox" name="issue" value="10" class="selectgroup-input" wire:model="problem" id="การปรับตัวเข้ากับครู-อาจารย์ในโรงเรียน">
+                                                                <input type="checkbox" name="issue" value="การปรับตัวเข้ากับครู-อาจารย์ในโรงเรียน" class="selectgroup-input" wire:model="problem" id="การปรับตัวเข้ากับครู-อาจารย์ในโรงเรียน">
                                                                 <span class="selectgroup-button">การปรับตัวเข้ากับครู-อาจารย์ในโรงเรียน</span>
                                                             </label>
                                                         </div>
@@ -1052,27 +1052,27 @@
                                                     <div class="form-group">
                                                         <div class="selectgroup selectgroup-pills">
                                                             <label class="selectgroup-item">
-                                                                <input type="checkbox" name="lack" value="1" class="selectgroup-input" wire:model="help" id="บิดา">
+                                                                <input type="checkbox" name="lack" value="บิดา" class="selectgroup-input" wire:model="help" id="บิดา">
                                                                 <span class="selectgroup-button">บิดา</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="checkbox" name="lack" value="2" class="selectgroup-input" wire:model="help" id="มารดา">
+                                                                <input type="checkbox" name="lack" value="มารดา" class="selectgroup-input" wire:model="help" id="มารดา">
                                                                 <span class="selectgroup-button">มารดา</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="checkbox" name="lack" value="3" class="selectgroup-input" wire:model="help" id="ครูแนะแนว">
+                                                                <input type="checkbox" name="lack" value="ครูแนะแนว" class="selectgroup-input" wire:model="help" id="ครูแนะแนว">
                                                                 <span class="selectgroup-button">ครูแนะแนว</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="checkbox" name="lack" value="4" class="selectgroup-input" wire:model="help" id="ครูที่ปรึกษา">
+                                                                <input type="checkbox" name="lack" value="ครูที่ปรึกษา" class="selectgroup-input" wire:model="help" id="ครูที่ปรึกษา">
                                                                 <span class="selectgroup-button">ครูที่ปรึกษา</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="checkbox" name="lack" value="5" class="selectgroup-input" wire:model="help" id="เพื่อน">
+                                                                <input type="checkbox" name="lack" value="เพื่อน" class="selectgroup-input" wire:model="help" id="เพื่อน">
                                                                 <span class="selectgroup-button">เพื่อน</span>
                                                             </label>
                                                             <label class="selectgroup-item">
-                                                                <input type="checkbox" name="lack" value="5" class="selectgroup-input" wire:model="help" id="อื่นๆ">
+                                                                <input type="checkbox" name="lack" value="อื่นๆ" class="selectgroup-input" wire:model="help" id="อื่นๆ">
                                                                 <span class="selectgroup-button">อื่นๆ</span>
                                                             </label>
                                                         </div>
@@ -1113,13 +1113,13 @@
                                                     <div class="col-6 col-md-6">
                                                         <div class="form-group form-group-default">
                                                             <label>น้ำหนัก</label>
-                                                            <input id="Name" type="text" class="form-control" placeholder="">
+                                                            <input wire:model="weight" type="text" class="form-control" placeholder="">
                                                         </div>
                                                     </div>
                                                     <div class="col-6 col-md-6">
                                                         <div class="form-group form-group-default">
                                                             <label>ส่วนสูง</label>
-                                                            <input id="Name" type="text" class="form-control" placeholder="">
+                                                            <input wire:model="height" type="text" class="form-control" placeholder="">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1127,25 +1127,25 @@
                                                     <div class="col-6 col-md-3">
                                                         <div class="form-group form-group-default">
                                                             <label>โรคประจำตัว</label>
-                                                            <input id="Name" type="text" class="form-control" placeholder="">
+                                                            <input wire:model="disease" type="text" class="form-control" placeholder="">
                                                         </div>
                                                     </div>
                                                     <div class="col-6 col-md-3">
                                                         <div class="form-group form-group-default">
                                                             <label>ยาที่แพ้</label>
-                                                            <input id="Name" type="text" class="form-control" placeholder="">
+                                                            <input wire:model="medicine_lose" type="text" class="form-control" placeholder="">
                                                         </div>
                                                     </div>
                                                     <div class="col-6 col-md-3">
                                                         <div class="form-group form-group-default">
                                                             <label>ยาที่ต้องรับประทานประจำ</label>
-                                                            <input id="Name" type="text" class="form-control" placeholder="">
+                                                            <input wire:model="medicine" type="text" class="form-control" placeholder="">
                                                         </div>
                                                     </div>
                                                     <div class="col-6 col-md-3">
                                                         <div class="form-group form-group-default">
                                                             <label>วิธีแก้ไขเมื่อเกิดอาการ</label>
-                                                            <input id="Name" type="text" class="form-control" placeholder="">
+                                                            <input wire:model="remedy" type="text" class="form-control" placeholder="">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1155,27 +1155,27 @@
                                                         <div class="form-group">
                                                             <div class="selectgroup selectgroup-pills">
                                                                 <label class="selectgroup-item">
-                                                                    <input type="checkbox" name="eye" value="1" class="selectgroup-input">
+                                                                    <input type="checkbox" name="eye" value="ปกติ" class="selectgroup-input" wire:model="sight_eye" id="ปกติ">
                                                                     <span class="selectgroup-button">ปกติ</span>
                                                                 </label>
                                                                 <label class="selectgroup-item">
-                                                                    <input type="checkbox" name="eye" value="2" class="selectgroup-input">
+                                                                    <input type="checkbox" name="eye" value="สายตาสั้น" class="selectgroup-input" wire:model="sight_eye" id="สายตาสั้น">
                                                                     <span class="selectgroup-button">สายตาสั้น</span>
                                                                 </label>
                                                                 <label class="selectgroup-item">
-                                                                    <input type="checkbox" name="eye" value="3" class="selectgroup-input">
+                                                                    <input type="checkbox" name="eye" value="สายตายาว" class="selectgroup-input" wire:model="sight_eye" id="สายตายาว">
                                                                     <span class="selectgroup-button">สายตายาว</span>
                                                                 </label>
                                                                 <label class="selectgroup-item">
-                                                                    <input type="checkbox" name="eye" value="4" class="selectgroup-input">
+                                                                    <input type="checkbox" name="eye" value="สายตาเอียง" class="selectgroup-input" wire:model="sight_eye" id="สายตาเอียง">
                                                                     <span class="selectgroup-button">สายตาเอียง</span>
                                                                 </label>
                                                                 <label class="selectgroup-item">
-                                                                    <input type="checkbox" name="eye" value="5" class="selectgroup-input">
+                                                                    <input type="checkbox" name="eye" value="ตาบอดสี" class="selectgroup-input" wire:model="sight_eye" id="ตาบอดสี">
                                                                     <span class="selectgroup-button">ตาบอดสี</span>
                                                                 </label>
                                                                 <label class="selectgroup-item">
-                                                                    <input type="checkbox" name="eye" value="6" class="selectgroup-input">
+                                                                    <input type="checkbox" name="eye" value="อื่นๆ" class="selectgroup-input" wire:model="sight_eye" id="อื่นๆ">
                                                                     <span class="selectgroup-button">อื่นๆ</span>
                                                                 </label>
                                                             </div>
@@ -1188,11 +1188,11 @@
                                                         <div class="form-group">
                                                             <div class="selectgroup selectgroup-secondary selectgroup-pills">
                                                                 <label class="selectgroup-item">
-                                                                    <input type="radio" name="1" value="yes" class="selectgroup-input">
+                                                                    <input type="radio" name="1" value="ใช่" class="selectgroup-input" wire:model="glasses" id="ใช่">
                                                                     <span class="selectgroup-button">ใช่</span>
                                                                 </label>
                                                                 <label class="selectgroup-item">
-                                                                    <input type="radio" name="1" value="no" class="selectgroup-input">
+                                                                    <input type="radio" name="1" value="ไม่ใช่" class="selectgroup-input" wire:model="glasses" id="ไม่ใช่">
                                                                     <span class="selectgroup-button">ไม่ใช่</span>
                                                                 </label>
                                                             </div>
@@ -1203,11 +1203,11 @@
                                                         <div class="form-group">
                                                             <div class="selectgroup selectgroup-secondary selectgroup-pills">
                                                                 <label class="selectgroup-item">
-                                                                    <input type="radio" name="2" value="yes" class="selectgroup-input">
+                                                                    <input type="radio" name="2" value="ใช่" class="selectgroup-input" wire:model="danger" id="ใช่">
                                                                     <span class="selectgroup-button">ใช่</span>
                                                                 </label>
                                                                 <label class="selectgroup-item">
-                                                                    <input type="radio" name="2" value="no" class="selectgroup-input">
+                                                                    <input type="radio" name="2" value="ไม่ใช่" class="selectgroup-input" wire:model="danger" id="ไม่ใช่">
                                                                     <span class="selectgroup-button">ไม่ใช่</span>
                                                                 </label>
                                                             </div>
@@ -1218,11 +1218,11 @@
                                                         <div class="form-group">
                                                             <div class="selectgroup selectgroup-secondary selectgroup-pills">
                                                                 <label class="selectgroup-item">
-                                                                    <input type="radio" name="3" value="yes" class="selectgroup-input">
+                                                                    <input type="radio" name="3" value="ใช่" class="selectgroup-input" wire:model="unsound" id="ใช่">
                                                                     <span class="selectgroup-button">ใช่</span>
                                                                 </label>
                                                                 <label class="selectgroup-item">
-                                                                    <input type="radio" name="3" value="no" class="selectgroup-input">
+                                                                    <input type="radio" name="3" value="ไม่ใช่" class="selectgroup-input" wire:model="unsound" id="ไม่ใช่">
                                                                     <span class="selectgroup-button">ไม่ใช่</span>
                                                                 </label>
                                                             </div>
@@ -1233,11 +1233,11 @@
                                                         <div class="form-group">
                                                             <div class="selectgroup selectgroup-secondary selectgroup-pills">
                                                                 <label class="selectgroup-item">
-                                                                    <input type="radio" name="4" value="yes" class="selectgroup-input">
+                                                                    <input type="radio" name="4" value="ใช่" class="selectgroup-input" wire:model="defective" id="ใช่">
                                                                     <span class="selectgroup-button">ใช่</span>
                                                                 </label>
                                                                 <label class="selectgroup-item">
-                                                                    <input type="radio" name="4" value="no" class="selectgroup-input">
+                                                                    <input type="radio" name="4" value="ไม่ใช่" class="selectgroup-input" wire:model="defective" id="ไม่ใช่">
                                                                     <span class="selectgroup-button">ไม่ใช่</span>
                                                                 </label>
                                                             </div>
@@ -1278,30 +1278,30 @@
                                                         <div class="col-sm-6 col-md-2">
                                                             <div class="form-group form-group-default">
                                                                 <label>คำนำหน้าชื่อ</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="prename_f">
                                                                     <option>เลือก</option>
-                                                                    <option>นาย</option>
-                                                                    <option>นางสาว</option>
-                                                                    <option>นาง</option>
+                                                                    <option value="นาย">นาย</option>
+                                                                    <option value="นางสาว">นางสาว</option>
+                                                                    <option value="นาง">นาง</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6 col-md-4">
                                                             <div class="form-group form-group-default">
                                                                 <label>ชื่อภาษาไทย</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="name_f" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6 col-md-2">
                                                             <div class="form-group form-group-default">
                                                                 <label>ชื่อกลาง</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="(ถ้ามี)">
+                                                                <input wire:model="name_cen_f" type="text" class="form-control" placeholder="(ถ้ามี)">
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6 col-md-4">
                                                             <div class="form-group form-group-default">
                                                                 <label>นามสกุลภาษาไทย</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="surname_f" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1309,35 +1309,35 @@
                                                         <div class="col-sm-4 col-md-4">
                                                             <div class="form-group form-group-default">
                                                                 <label>เลขประจำตัวประชาชน</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="id_father" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6 col-md-4">
                                                             <div class="form-group form-group-default">
                                                                 <label>ชนิดของบัตร</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="type_card_f">
                                                                     <option>เลือก</option>
-                                                                    <option value="">บัตรประจำตัวประชาชน</option>
-                                                                    <option value="">บัตรประจำตัวคนซึ่งไม่มีสัญชาติไทย</option>
-                                                                    <option value="">บัตรประจำตัวบุคคลที่ไม่มีสถานะทางทะเบียน</option>
+                                                                    <option value="บัตรประจำตัวประชาชน">บัตรประจำตัวประชาชน</option>
+                                                                    <option value="บัตรประจำตัวคนซึ่งไม่มีสัญชาติไทย">บัตรประจำตัวคนซึ่งไม่มีสัญชาติไทย</option>
+                                                                    <option value="บัตรประจำตัวบุคคลที่ไม่มีสถานะทางทะเบียน">บัตรประจำตัวบุคคลที่ไม่มีสถานะทางทะเบียน</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-2">
                                                             <div class="form-group form-group-default">
                                                                 <label>อายุ</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input id="age_f" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-2">
                                                             <div class="form-group form-group-default">
                                                                 <label>หมู่เลือด</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="bloodgroup_f">
                                                                     <option>เลือก</option>
-                                                                    <option value="">A</option>
-                                                                    <option value="">B</option>
-                                                                    <option value="">O</option>
-                                                                    <option value="">AB</option>
+                                                                    <option value="A">A</option>
+                                                                    <option value="B">B</option>
+                                                                    <option value="O">O</option>
+                                                                    <option value="AB">AB</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -1346,34 +1346,35 @@
                                                         <div class="col-6 col-md-6">
                                                             <div class="form-group form-group-default">
                                                                 <label>การประกอบอาชีพ</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="job_f">
                                                                     <option>เลือก</option>
-                                                                    <option value="">รับราชกาล</option>
-                                                                    <option value="">ค้าขาย</option>
-                                                                    <option value="">เกษตรกร</option>
-                                                                    <option value="">ลูกจ้าง</option>
-                                                                    <option value="">อิสระ</option>
+                                                                    <option value="รับราชกาล">รับราชกาล</option>
+                                                                    <option value="ค้าขาย">ค้าขาย</option>
+                                                                    <option value="เกษตรกร">เกษตรกร</option>
+                                                                    <option value="ลูกจ้าง">ลูกจ้าง</option>
+                                                                    <option value="อิสระ">อิสระ</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>รายได้ต่อเดือน (บาท)</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
-                                                                <option value="">0 - 9000</option>
-                                                                    <option value="">9,001 - 15,000</option>
-                                                                    <option value="">15,001 - 30,000</option>
-                                                                    <option value="">30,001 - 50,000</option>
-                                                                    <option value="">50,001 - 100,000</option>
-                                                                    <option value="">100,001 - 300,000</option>
-                                                                    <option value="">มากกว่า 300,000</option>
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="salary_f">
+                                                                <option>เลือก</option>
+                                                                <option value="0 - 9000">0 - 9000</option>
+                                                                    <option value="9,001 - 15,000">9,001 - 15,000</option>
+                                                                    <option value="15,001 - 30,000">15,001 - 30,000</option>
+                                                                    <option value="30,001 - 50,000">30,001 - 50,000</option>
+                                                                    <option value="50,001 - 100,000">50,001 - 100,000</option>
+                                                                    <option value="100,001 - 300,000">100,001 - 300,000</option>
+                                                                    <option value="มากกว่า 300,000">มากกว่า 300,000</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>หมายเลขโทรศัพท์ที่สามารถติดต่อได้</label>
-                                                                <input id="Name" type="text" class="form-control">
+                                                                <input wire:model="tel_f" type="text" class="form-control">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1381,31 +1382,31 @@
                                                         <div class="col-6 col-md-2">
                                                             <div class="form-group form-group-default">
                                                                 <label>บ้านเลขที่</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="house_number_f" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-2">
                                                             <div class="form-group form-group-default">
                                                                 <label>หมู่</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="group_f" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>ชื่อหมู่บ้าน</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="village_f" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-2">
                                                             <div class="form-group form-group-default">
                                                                 <label>ซอย</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="alley_f" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>ถนน</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="street_f" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1413,25 +1414,25 @@
                                                         <div class="col-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>ตำบล/แขวง</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="subdistrict_f" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>อำเภอ/เขต</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="district_f" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>จังหวัด</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="province_f" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>รหัสไปรษณีย์</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="post_f" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1444,30 +1445,30 @@
                                                         <div class="col-sm-6 col-md-2">
                                                             <div class="form-group form-group-default">
                                                                 <label>คำนำหน้าชื่อ</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="prename_m">
                                                                     <option>เลือก</option>
-                                                                    <option>นาย</option>
-                                                                    <option>นางสาว</option>
-                                                                    <option>นาง</option>
+                                                                    <option value="นาย">นาย</option>
+                                                                    <option value="นางสาว">นางสาว</option>
+                                                                    <option value="นาง">นาง</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6 col-md-4">
                                                             <div class="form-group form-group-default">
                                                                 <label>ชื่อภาษาไทย</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="name_m" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6 col-md-2">
                                                             <div class="form-group form-group-default">
                                                                 <label>ชื่อกลาง</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="(ถ้ามี)">
+                                                                <input wire:model="name_cen_m" type="text" class="form-control" placeholder="(ถ้ามี)">
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6 col-md-4">
                                                             <div class="form-group form-group-default">
                                                                 <label>นามสกุลภาษาไทย</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="surname_m" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1475,35 +1476,35 @@
                                                         <div class="col-sm-4 col-md-4">
                                                             <div class="form-group form-group-default">
                                                                 <label>เลขประจำตัวประชาชน</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="id_mother" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6 col-md-4">
                                                             <div class="form-group form-group-default">
                                                                 <label>ชนิดของบัตร</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="type_card_m">
                                                                     <option>เลือก</option>
-                                                                    <option value="">บัตรประจำตัวประชาชน</option>
-                                                                    <option value="">บัตรประจำตัวคนซึ่งไม่มีสัญชาติไทย</option>
-                                                                    <option value="">บัตรประจำตัวบุคคลที่ไม่มีสถานะทางทะเบียน</option>
+                                                                    <option value="บัตรประจำตัวประชาชน">บัตรประจำตัวประชาชน</option>
+                                                                    <option value="บัตรประจำตัวคนซึ่งไม่มีสัญชาติไทย">บัตรประจำตัวคนซึ่งไม่มีสัญชาติไทย</option>
+                                                                    <option value="บัตรประจำตัวบุคคลที่ไม่มีสถานะทางทะเบียน">บัตรประจำตัวบุคคลที่ไม่มีสถานะทางทะเบียน</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-2">
                                                             <div class="form-group form-group-default">
                                                                 <label>อายุ</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="age_m" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-2">
                                                             <div class="form-group form-group-default">
                                                                 <label>หมู่เลือด</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="bloodgroup_m">
                                                                     <option>เลือก</option>
-                                                                    <option value="">A</option>
-                                                                    <option value="">B</option>
-                                                                    <option value="">O</option>
-                                                                    <option value="">AB</option>
+                                                                    <option value="A">A</option>
+                                                                    <option value="B">B</option>
+                                                                    <option value="O">O</option>
+                                                                    <option value="AB">AB</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -1512,13 +1513,13 @@
                                                         <div class="col-6 col-md-6">
                                                             <div class="form-group form-group-default">
                                                                 <label>การประกอบอาชีพ</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="job_m">
                                                                     <option>เลือก</option>
-                                                                    <option value="">รับราชกาล</option>
-                                                                    <option value="">ค้าขาย</option>
-                                                                    <option value="">เกษตรกร</option>
-                                                                    <option value="">ลูกจ้าง</option>
-                                                                    <option value="">อิสระ</option>
+                                                                    <option value="รับราชกาล">รับราชกาล</option>
+                                                                    <option value="ค้าขาย">ค้าขาย</option>
+                                                                    <option value="เกษตรกร">เกษตรกร</option>
+                                                                    <option value="ลูกจ้าง">ลูกจ้าง</option>
+                                                                    <option value="อิสระ">อิสระ</option>
                                                                 </select>
                                                                 </select>
                                                             </div>
@@ -1526,22 +1527,22 @@
                                                         <div class="col-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>รายได้ต่อเดือน (บาท)</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="salary_m">
                                                                     <option>เลือก</option>
-                                                                    <option value="">0 - 9000</option>
-                                                                    <option value="">9,001 - 15,000</option>
-                                                                    <option value="">15,001 - 30,000</option>
-                                                                    <option value="">30,001 - 50,000</option>
-                                                                    <option value="">50,001 - 100,000</option>
-                                                                    <option value="">100,001 - 300,000</option>
-                                                                    <option value="">มากกว่า 300,000</option>
+                                                                    <option value="0 - 9000">0 - 9000</option>
+                                                                    <option value="9,001 - 15,000">9,001 - 15,000</option>
+                                                                    <option value="15,001 - 30,000">15,001 - 30,000</option>
+                                                                    <option value="30,001 - 50,000">30,001 - 50,000</option>
+                                                                    <option value="50,001 - 100,000">50,001 - 100,000</option>
+                                                                    <option value="100,001 - 300,000">100,001 - 300,000</option>
+                                                                    <option value="มากกว่า 300,000">มากกว่า 300,000</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>หมายเลขโทรศัพท์ที่สามารถติดต่อได้</label>
-                                                                <input id="Name" type="text" class="form-control">
+                                                                <input wire:model="tel_m" type="text" class="form-control">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1549,31 +1550,31 @@
                                                         <div class="col-6 col-md-2">
                                                             <div class="form-group form-group-default">
                                                                 <label>บ้านเลขที่</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="house_number_m" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-2">
                                                             <div class="form-group form-group-default">
                                                                 <label>หมู่</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="group_m" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>ชื่อหมู่บ้าน</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="village_m" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-2">
                                                             <div class="form-group form-group-default">
                                                                 <label>ซอย</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="alley_m" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>ถนน</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="street_m" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1581,25 +1582,25 @@
                                                         <div class="col-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>ตำบล/แขวง</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="subdistrict_m" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>อำเภอ/เขต</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="district_m" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>จังหวัด</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="province_m" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>รหัสไปรษณีย์</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="post_m" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1613,15 +1614,15 @@
 
                                                             <div class="form-check">
                                                                 <label class="form-radio-label">
-                                                                    <input class="form-radio-input" type="radio" name="optionsRadios" value="">
+                                                                    <input class="form-radio-input" type="radio" name="optionsRadios" value="บิดา" wire:model="parent" id="บิดา">
                                                                     <span class="form-radio-sign">บิดา</span>
                                                                 </label>
                                                                 <label class="form-radio-label ml-1">
-                                                                    <input class="form-radio-input" type="radio" name="optionsRadios" value="">
+                                                                    <input class="form-radio-input" type="radio" name="optionsRadios" value="มารดา" wire:model="parent" id="มารดา">
                                                                     <span class="form-radio-sign">มารดา</span>
                                                                 </label>
                                                                 <label class="form-radio-label ml-1">
-                                                                    <input class="form-radio-input" type="radio" name="optionsRadios" value="">
+                                                                    <input class="form-radio-input" type="radio" name="optionsRadios" value="บุคคลอื่น" wire:model="parent" id="บุคคลอื่น">
                                                                     <span class="form-radio-sign">บุคคลอื่น</span>
                                                                 </label>
                                                             </div>
@@ -1631,30 +1632,30 @@
                                                         <div class="col-sm-6 col-md-2">
                                                             <div class="form-group form-group-default">
                                                                 <label>คำนำหน้าชื่อ</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="prename_p">
                                                                     <option>เลือก</option>
-                                                                    <option>นาย</option>
-                                                                    <option>นางสาว</option>
-                                                                    <option>นาง</option>
+                                                                    <option value="นาย">นาย</option>
+                                                                    <option value="นางสาว">นางสาว</option>
+                                                                    <option value="นาง">นาง</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6 col-md-4">
                                                             <div class="form-group form-group-default">
                                                                 <label>ชื่อภาษาไทย</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="name_p" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6 col-md-2">
                                                             <div class="form-group form-group-default">
                                                                 <label>ชื่อกลาง</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="(ถ้ามี)">
+                                                                <input wire:model="name_cen_p" type="text" class="form-control" placeholder="(ถ้ามี)">
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6 col-md-4">
                                                             <div class="form-group form-group-default">
                                                                 <label>นามสกุลภาษาไทย</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="surname_p" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1662,43 +1663,43 @@
                                                         <div class="col-sm-4 col-md-4">
                                                             <div class="form-group form-group-default">
                                                                 <label>เลขประจำตัวประชาชน</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="id_parent" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-4">
                                                             <div class="form-group form-group-default">
                                                                 <label>ชนิดของบัตร</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="type_card_p">
                                                                     <option>เลือก</option>
-                                                                    <option value="">บัตรประจำตัวประชาชน</option>
-                                                                    <option value="">บัตรประจำตัวคนซึ่งไม่มีสัญชาติไทย</option>
-                                                                    <option value="">บัตรประจำตัวบุคคลที่ไม่มีสถานะทางทะเบียน</option>
+                                                                    <option value="บัตรประจำตัวประชาชน">บัตรประจำตัวประชาชน</option>
+                                                                    <option value="บัตรประจำตัวคนซึ่งไม่มีสัญชาติไทย">บัตรประจำตัวคนซึ่งไม่มีสัญชาติไทย</option>
+                                                                    <option value="บัตรประจำตัวบุคคลที่ไม่มีสถานะทางทะเบียน">บัตรประจำตัวบุคคลที่ไม่มีสถานะทางทะเบียน</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-2">
                                                             <div class="form-group form-group-default">
                                                                 <label>อายุ</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="age_p" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6 col-md-2">
                                                             <div class="form-group form-group-default">
                                                                 <label>ความสัมพันธ์ผู้ปกครอง</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="bloodgroup_p">
                                                                     <option>เลือก</option>
-                                                                    <option value="">พี่ชาย</option>
-                                                                    <option value="">พี่สาว</option>
-                                                                    <option value="">บิดา</option>
-                                                                    <option value="">มารดา</option>
-                                                                    <option value="">ลุง</option>
-                                                                    <option value="">ป้า</option>
-                                                                    <option value="">น้า</option>
-                                                                    <option value="">อา</option>
-                                                                    <option value="">ปู่</option>
-                                                                    <option value="">ย่า</option>
-                                                                    <option value="">ตา</option>
-                                                                    <option value="">ยาย</option>
+                                                                    <option value="พี่ชาย">พี่ชาย</option>
+                                                                    <option value="พี่สาว">พี่สาว</option>
+                                                                    <option value="บิดา">บิดา</option>
+                                                                    <option value="มารดา">มารดา</option>
+                                                                    <option value="ลุง">ลุง</option>
+                                                                    <option value="ป้า">ป้า</option>
+                                                                    <option value="น้า">น้า</option>
+                                                                    <option value="อา">อา</option>
+                                                                    <option value="ปู่">ปู่</option>
+                                                                    <option value="ย่า">ย่า</option>
+                                                                    <option value="ตา">ตา</option>
+                                                                    <option value="ยาย">ยาย</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -1707,35 +1708,35 @@
                                                         <div class="col-6 col-md-6">
                                                             <div class="form-group form-group-default">
                                                                 <label>การประกอบอาชีพ</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="job_p">
                                                                     <option>เลือก</option>
-                                                                    <option value="">รับราชกาล</option>
-                                                                    <option value="">ค้าขาย</option>
-                                                                    <option value="">เกษตรกร</option>
-                                                                    <option value="">ลูกจ้าง</option>
-                                                                    <option value="">อิสระ</option>
+                                                                    <option value="รับราชกาล">รับราชกาล</option>
+                                                                    <option value="ค้าขาย">ค้าขาย</option>
+                                                                    <option value="เกษตรกร">เกษตรกร</option>
+                                                                    <option value="ลูกจ้าง">ลูกจ้าง</option>
+                                                                    <option value="อิสระ">อิสระ</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>รายได้ต่อเดือน (บาท)</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="salary_p">
                                                                     <option>เลือก</option>
-                                                                    <option value="">0 - 9000</option>
-                                                                    <option value="">9,001 - 15,000</option>
-                                                                    <option value="">15,001 - 30,000</option>
-                                                                    <option value="">30,001 - 50,000</option>
-                                                                    <option value="">50,001 - 100,000</option>
-                                                                    <option value="">100,001 - 300,000</option>
-                                                                    <option value="">มากกว่า 300,000</option>
+                                                                    <option value="0 - 9000">0 - 9000</option>
+                                                                    <option value="9,001 - 15,000">9,001 - 15,000</option>
+                                                                    <option value="15,001 - 30,000">15,001 - 30,000</option>
+                                                                    <option value="30,001 - 50,000">30,001 - 50,000</option>
+                                                                    <option value="50,001 - 100,000">50,001 - 100,000</option>
+                                                                    <option value="100,001 - 300,000">100,001 - 300,000</option>
+                                                                    <option value="มากกว่า 300,000">มากกว่า 300,000</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>หมายเลขโทรศัพท์ที่สามารถติดต่อได้</label>
-                                                                <input id="Name" type="text" class="form-control">
+                                                                <input wire:model="tel_p" type="text" class="form-control">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1743,31 +1744,31 @@
                                                         <div class="col-6 col-md-2">
                                                             <div class="form-group form-group-default">
                                                                 <label>บ้านเลขที่</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="house_number_p" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-2">
                                                             <div class="form-group form-group-default">
                                                                 <label>หมู่</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="group_p" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>ชื่อหมู่บ้าน</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="village_p" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-2">
                                                             <div class="form-group form-group-default">
                                                                 <label>ซอย</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="alley_p" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>ถนน</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="street_p" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1775,25 +1776,25 @@
                                                         <div class="col-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>ตำบล/แขวง</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="subdistrict_p" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>อำเภอ/เขต</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="district_p" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>จังหวัด</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="province_p" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>รหัสไปรษณีย์</label>
-                                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                                <input wire:model="post_p" type="text" class="form-control" placeholder="">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1806,17 +1807,17 @@
                                                         <div class="col-6 col-md-8">
                                                             <div class="form-group form-group-default">
                                                                 <label>สถานภาพสมรสของบิดามารดา</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="status_parent">
                                                                     <option>เลือก</option>
-                                                                    <option value="">สมรส</option>
-                                                                    <option value="">หย่าร้าง</option>
+                                                                    <option value="สมรส">สมรส</option>
+                                                                    <option value="หย่าร้าง">หย่าร้าง</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-4">
                                                             <div class="form-group form-group-default">
                                                                 <label>สถานะผู้ปกครองนักเรียน</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="student_parent">
                                                                     <option>เลือก</option>
                                                                     <option>1</option>
                                                                     <option>2</option>
@@ -1829,95 +1830,95 @@
                                                         <div class="col-sm-6 col-md-4">
                                                             <div class="form-group form-group-default">
                                                                 <label>จำนวนพี่น้อง ร่วมสายโลหิต</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="no_blood">
                                                                     <option>เลือก</option>
-                                                                    <option value="">0</option>
-                                                                    <option value="">1</option>
-                                                                    <option value="">2</option>
-                                                                    <option value="">3</option>
-                                                                    <option value="">4</option>
-                                                                    <option value="">5</option>
-                                                                    <option value="">6</option>
-                                                                    <option value="">7</option>
-                                                                    <option value="">8</option>
-                                                                    <option value="">9</option>
-                                                                    <option value="">10</option>
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="6">6</option>
+                                                                    <option value="7">7</option>
+                                                                    <option value="8">8</option>
+                                                                    <option value="9">9</option>
+                                                                    <option value="10">10</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-2">
                                                             <div class="form-group form-group-default">
                                                                 <label>จำนวนพี่ชาย</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="no_brother">
                                                                     <option>เลือก</option>
-                                                                    <option value="">0</option>
-                                                                    <option value="">1</option>
-                                                                    <option value="">2</option>
-                                                                    <option value="">3</option>
-                                                                    <option value="">4</option>
-                                                                    <option value="">5</option>
-                                                                    <option value="">6</option>
-                                                                    <option value="">7</option>
-                                                                    <option value="">8</option>
-                                                                    <option value="">9</option>
-                                                                    <option value="">10</option>
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="6">6</option>
+                                                                    <option value="7">7</option>
+                                                                    <option value="8">8</option>
+                                                                    <option value="9">9</option>
+                                                                    <option value="10">10</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-2">
                                                             <div class="form-group form-group-default">
                                                                 <label>จำนวนน้องชาย</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="no_son">
                                                                     <option>เลือก</option>
-                                                                    <option value="">0</option>
-                                                                    <option value="">1</option>
-                                                                    <option value="">2</option>
-                                                                    <option value="">3</option>
-                                                                    <option value="">4</option>
-                                                                    <option value="">5</option>
-                                                                    <option value="">6</option>
-                                                                    <option value="">7</option>
-                                                                    <option value="">8</option>
-                                                                    <option value="">9</option>
-                                                                    <option value="">10</option>
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="6">6</option>
+                                                                    <option value="7">7</option>
+                                                                    <option value="8">8</option>
+                                                                    <option value="9">9</option>
+                                                                    <option value="10">10</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-2">
                                                             <div class="form-group form-group-default">
                                                                 <label>จำนวนพี่สาว</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="no_sister">
                                                                     <option>เลือก</option>
-                                                                    <option value="">0</option>
-                                                                    <option value="">1</option>
-                                                                    <option value="">2</option>
-                                                                    <option value="">3</option>
-                                                                    <option value="">4</option>
-                                                                    <option value="">5</option>
-                                                                    <option value="">6</option>
-                                                                    <option value="">7</option>
-                                                                    <option value="">8</option>
-                                                                    <option value="">9</option>
-                                                                    <option value="">10</option>
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="6">6</option>
+                                                                    <option value="7">7</option>
+                                                                    <option value="8">8</option>
+                                                                    <option value="9">9</option>
+                                                                    <option value="10">10</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                         <div class="col-6 col-md-2">
                                                             <div class="form-group form-group-default">
                                                                 <label>จำนวนน้องสาว</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="no_son2">
                                                                     <option>เลือก</option>
-                                                                    <option value="">0</option>
-                                                                    <option value="">1</option>
-                                                                    <option value="">2</option>
-                                                                    <option value="">3</option>
-                                                                    <option value="">4</option>
-                                                                    <option value="">5</option>
-                                                                    <option value="">6</option>
-                                                                    <option value="">7</option>
-                                                                    <option value="">8</option>
-                                                                    <option value="">9</option>
-                                                                    <option value="">10</option>
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="6">6</option>
+                                                                    <option value="7">7</option>
+                                                                    <option value="8">8</option>
+                                                                    <option value="9">9</option>
+                                                                    <option value="10">10</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -1926,76 +1927,76 @@
                                                         <div class="col-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>นักเรียนเป็นบุตรคนที่</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="no_parent">
                                                                     <option>เลือก</option>
-                                                                    <option value="">0</option>
-                                                                    <option value="">1</option>
-                                                                    <option value="">2</option>
-                                                                    <option value="">3</option>
-                                                                    <option value="">4</option>
-                                                                    <option value="">5</option>
-                                                                    <option value="">6</option>
-                                                                    <option value="">7</option>
-                                                                    <option value="">8</option>
-                                                                    <option value="">9</option>
-                                                                    <option value="">10</option>
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="6">6</option>
+                                                                    <option value="7">7</option>
+                                                                    <option value="8">8</option>
+                                                                    <option value="9">9</option>
+                                                                    <option value="10">10</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>จำนวนพี่น้องที่ศึกษาอยู่ (ไม่นับรวมนักเรียน)</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="no_study">
                                                                     <option>เลือก</option>
-                                                                    <option value="">0</option>
-                                                                    <option value="">1</option>
-                                                                    <option value="">2</option>
-                                                                    <option value="">3</option>
-                                                                    <option value="">4</option>
-                                                                    <option value="">5</option>
-                                                                    <option value="">6</option>
-                                                                    <option value="">7</option>
-                                                                    <option value="">8</option>
-                                                                    <option value="">9</option>
-                                                                    <option value="">10</option>
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="6">6</option>
+                                                                    <option value="7">7</option>
+                                                                    <option value="8">8</option>
+                                                                    <option value="9">9</option>
+                                                                    <option value="10">10</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>จำนวนพี่น้องที่ประกอบอาชีพแล้ว</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="no_job">
                                                                     <option>เลือก</option>
-                                                                    <option value="">0</option>
-                                                                    <option value="">1</option>
-                                                                    <option value="">2</option>
-                                                                    <option value="">3</option>
-                                                                    <option value="">4</option>
-                                                                    <option value="">5</option>
-                                                                    <option value="">6</option>
-                                                                    <option value="">7</option>
-                                                                    <option value="">8</option>
-                                                                    <option value="">9</option>
-                                                                    <option value="">10</option>
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="6">6</option>
+                                                                    <option value="7">7</option>
+                                                                    <option value="8">8</option>
+                                                                    <option value="9">9</option>
+                                                                    <option value="10">10</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>จำนวนพี่น้องที่อยู่ในความอุปการะของครอบครัว</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="no_house">
                                                                     <option>เลือก</option>
-                                                                    <option value="">0</option>
-                                                                    <option value="">1</option>
-                                                                    <option value="">2</option>
-                                                                    <option value="">3</option>
-                                                                    <option value="">4</option>
-                                                                    <option value="">5</option>
-                                                                    <option value="">6</option>
-                                                                    <option value="">7</option>
-                                                                    <option value="">8</option>
-                                                                    <option value="">9</option>
-                                                                    <option value="">10</option>
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="6">6</option>
+                                                                    <option value="7">7</option>
+                                                                    <option value="8">8</option>
+                                                                    <option value="9">9</option>
+                                                                    <option value="10">10</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -2004,26 +2005,13 @@
                                                         <div class="col-sm-6 col-md-9">
                                                             <div class="form-group form-group-default">
                                                                 <label>นักเรียนมีหน้าที่รับผิดชอบภายในบ้าน นอกเหนือจากการเรียน</label>
-                                                                <input id="Name" type="text" class="form-control">
+                                                                <input wire:model="student_job" type="text" class="form-control">
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6 col-md-3">
                                                             <div class="form-group form-group-default">
                                                                 <label>นักเรียนนำเงินมาโรงเรียนวันละ (บาท)</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
-                                                                    <option>เลือก</option>
-                                                                    <option value="">0</option>
-                                                                    <option value="">1</option>
-                                                                    <option value="">2</option>
-                                                                    <option value="">3</option>
-                                                                    <option value="">4</option>
-                                                                    <option value="">5</option>
-                                                                    <option value="">6</option>
-                                                                    <option value="">7</option>
-                                                                    <option value="">8</option>
-                                                                    <option value="">9</option>
-                                                                    <option value="">10</option>
-                                                                </select>
+                                                                <input wire:model="student_money" type="text" class="form-control">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2031,45 +2019,41 @@
                                                         <div class="col-sm-6 col-md-4">
                                                             <div class="form-group form-group-default">
                                                                 <label>รายได้ของครอบครัวต่อเดือน (รายได้รวมกัน)</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="parent_money">
                                                                     <option>เลือก</option>
-                                                                    <option value="">0</option>
-                                                                    <option value="">1</option>
-                                                                    <option value="">2</option>
-                                                                    <option value="">3</option>
-                                                                    <option value="">4</option>
-                                                                    <option value="">5</option>
-                                                                    <option value="">6</option>
-                                                                    <option value="">7</option>
-                                                                    <option value="">8</option>
-                                                                    <option value="">9</option>
-                                                                    <option value="">10</option>
+                                                                    <option value="0 - 9000">0 - 9000</option>
+                                                                    <option value="9,001 - 15,000">9,001 - 15,000</option>
+                                                                    <option value="15,001 - 30,000">15,001 - 30,000</option>
+                                                                    <option value="30,001 - 50,000">30,001 - 50,000</option>
+                                                                    <option value="50,001 - 100,000">50,001 - 100,000</option>
+                                                                    <option value="100,001 - 300,000">100,001 - 300,000</option>
+                                                                    <option value="มากกว่า 300,000">มากกว่า 300,000</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6 col-md-6">
                                                             <div class="form-group form-group-default">
                                                                 <label>ผู้ออกค่าใช้จ่ายให้นักเรียน (ชื่อ-นามสกุล)</label>
-                                                                <input id="Name" type="text" class="form-control">
+                                                                <input wire:model="parent_total" type="text" class="form-control">
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6 col-md-2">
                                                             <div class="form-group form-group-default">
                                                                 <label>เกี่ยวข้องเป็น</label>
-                                                                <select class="form-control" id="formGroupDefaultSelect">
+                                                                <select class="form-control" id="formGroupDefaultSelect" wire:model="parent_house">
                                                                     <option>เลือก</option>
-                                                                    <option>พี่ชาย</option>
-                                                                    <option>พี่สาว</option>
-                                                                    <option>บิดา</option>
-                                                                    <option>มารดา</option>
-                                                                    <option>ลุง</option>
-                                                                    <option>ป้า</option>
-                                                                    <option>น้า</option>
-                                                                    <option>อา</option>
-                                                                    <option>ปู่</option>
-                                                                    <option>ย่า</option>
-                                                                    <option>ตา</option>
-                                                                    <option>ยาย</option>
+                                                                    <option value="พี่ชาย">พี่ชาย</option>
+                                                                    <option value="พี่สาว">พี่สาว</option>
+                                                                    <option value="บิดา">บิดา</option>
+                                                                    <option value="มารดา">มารดา</option>
+                                                                    <option value="ลุง">ลุง</option>
+                                                                    <option value="ป้า">ป้า</option>
+                                                                    <option value="น้า">น้า</option>
+                                                                    <option value="อา">อา</option>
+                                                                    <option value="ปู่">ปู่</option>
+                                                                    <option value="ย่า">ย่า</option>
+                                                                    <option value="ตา">ตา</option>
+                                                                    <option value="ยาย">ยาย</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -2079,20 +2063,20 @@
                                                             <label style="margin-bottom: 5px;"><small>การหารายได้ด้วยตนเอง</small></label>
                                                             <div class="form-check">
                                                                 <label class="form-radio-label">
-                                                                    <input class="form-radio-input" type="radio" name="optionsRadios" value="">
+                                                                    <input class="form-radio-input" type="radio" name="optionsRadios" value="ไม่มี" wire:model="job_study" id="ไม่มี">
                                                                     <span class="form-radio-sign">ไม่มี</span>
                                                                 </label><br><br>
                                                                 <label class="form-radio-label">
-                                                                    <input class="form-radio-input" type="radio" name="optionsRadios" value="">
+                                                                    <input class="form-radio-input" type="radio" name="optionsRadios" value="มี" wire:model="job_study" id="มี">
                                                                     <span class="form-radio-sign">มี</span>
                                                                 </label>
                                                                 <div class="form-group form-group-default">
                                                                     <label>โปรดระบุ (หารายได้จากอะไร)</label>
-                                                                    <input id="Name" type="text" class="form-control">
+                                                                    <input wire:model="job_detail" type="text" class="form-control">
                                                                 </div>
                                                                 <div class="form-group form-group-default">
                                                                     <label>รายได้เฉลี่ยวันละ (บาท)</label>
-                                                                    <input id="Name" type="text" class="form-control">
+                                                                    <input wire:model="total_study" type="text" class="form-control">
                                                                 </div>
                                                             </div>
                                                         </div>

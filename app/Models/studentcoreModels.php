@@ -9,7 +9,6 @@ use Laravel\Passport\HasApiTokens;
 
 class studentcoreModels extends Model
 {
-    use HasApiTokens, HasFactory, Notifiable;
 
     protected $table = "student_core";
     protected $fillable = [

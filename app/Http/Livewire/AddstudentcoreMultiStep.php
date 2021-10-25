@@ -118,8 +118,8 @@ class AddstudentcoreMultiStep extends Component
     public $talent;
     public $dream_job;
     public $because;
-    public $read_write;
-    public $understand;
+    public $read_write = [];
+    public $understand = [];
 
     //parentstudent
     public $student_idcard_p;
@@ -163,7 +163,7 @@ class AddstudentcoreMultiStep extends Component
     public $district_m;
     public $province_m;
     public $post_m;
-    public $parent;
+    public $parent =[];
     public $prename_p;
     public $name_p;
     public $name_cen_p;
@@ -200,7 +200,7 @@ class AddstudentcoreMultiStep extends Component
     public $parent_money;
     public $parent_total;
     public $parent_house;
-    public $job_study;
+    public $job_study = [];
     public $job_detail;
     public $total_study;
 
@@ -273,7 +273,7 @@ class AddstudentcoreMultiStep extends Component
             "district"=>$this->district,
             "province"=>$this->province,
             "post"=>$this->post,
-            "address_now"=>json_encode($this->address_now),
+            "address_now"=>json_encode($this->address_now, JSON_UNESCAPED_UNICODE),
             "house_number_n"=>$this->house_number_n,
             "village_n"=>$this->village_n,
             "alley_n"=>$this->alley_n,
@@ -294,11 +294,11 @@ class AddstudentcoreMultiStep extends Component
             "medicine_lose"=>$this->medicine_lose,
             "medicine"=>$this->medicine,
             "remedy"=>$this->remedy,
-            "glasses"=>json_encode($this->glasses),
-            "danger"=>json_encode($this->danger),
-            "unsound"=>json_encode($this->unsound),
-            "defective"=>json_encode($this->defective),
-            "sight_eye"=>json_encode($this->sight_eye),
+            "glasses"=>json_encode($this->glasses, JSON_UNESCAPED_UNICODE),
+            "danger"=>json_encode($this->danger, JSON_UNESCAPED_UNICODE),
+            "unsound"=>json_encode($this->unsound, JSON_UNESCAPED_UNICODE),
+            "defective"=>json_encode($this->defective, JSON_UNESCAPED_UNICODE),
+            "sight_eye"=>json_encode($this->sight_eye, JSON_UNESCAPED_UNICODE),
         );
 
         //studentdetail
@@ -312,19 +312,19 @@ class AddstudentcoreMultiStep extends Component
             "unfortuned"=>$this->unfortuned,
             "good_guy"=>$this->good_guy,
             "social_good"=>$this->social_good,
-            "friend_drug"=>json_encode($this->friend_drug),
-            "sell_drug"=>json_encode($this->sell_drug),
-            "sexual"=>json_encode($this->sexual),
-            "not_parent"=>json_encode($this->not_parent),
-            "dark_travel"=>json_encode($this->dark_travel),
-            "sexual_harrasment"=>json_encode($this->sexual_harrasment),
-            "cute_world"=>json_encode($this->cute_world),
-            "rich_man"=>json_encode($this->rich_man),
-            "gadject"=>json_encode($this->gadject),
-            "internet"=>json_encode($this->internet),
+            "friend_drug"=>json_encode($this->friend_drug, JSON_UNESCAPED_UNICODE),
+            "sell_drug"=>json_encode($this->sell_drug, JSON_UNESCAPED_UNICODE),
+            "sexual"=>json_encode($this->sexual, JSON_UNESCAPED_UNICODE),
+            "not_parent"=>json_encode($this->not_parent, JSON_UNESCAPED_UNICODE),
+            "dark_travel"=>json_encode($this->dark_travel, JSON_UNESCAPED_UNICODE),
+            "sexual_harrasment"=>json_encode($this->sexual_harrasment, JSON_UNESCAPED_UNICODE),
+            "cute_world"=>json_encode($this->cute_world, JSON_UNESCAPED_UNICODE),
+            "rich_man"=>json_encode($this->rich_man, JSON_UNESCAPED_UNICODE),
+            "gadject"=>json_encode($this->gadject, JSON_UNESCAPED_UNICODE),
+            "internet"=>json_encode($this->internet, JSON_UNESCAPED_UNICODE),
             "lack"=>json_encode($this->lack),
-            "problem"=>json_encode($this->problem),
-            "help"=>json_encode($this->help),
+            "problem"=>json_encode($this->problem, JSON_UNESCAPED_UNICODE),
+            "help"=>json_encode($this->help, JSON_UNESCAPED_UNICODE),
         );
 
         //talentstudent
@@ -347,8 +347,8 @@ class AddstudentcoreMultiStep extends Component
             "talent"=>$this->talent,
             "dream_job"=>$this->dream_job,
             "because"=>$this->because,
-            "read_write"=>json_encode($this->read_write),
-            "understand"=>json_encode($this->understand),
+            "read_write"=>json_encode($this->read_write, JSON_UNESCAPED_UNICODE),
+            "understand"=>json_encode($this->understand, JSON_UNESCAPED_UNICODE),
         );
 
         //parentstudent
@@ -394,7 +394,7 @@ class AddstudentcoreMultiStep extends Component
             "district_m"=>$this->district_m,
             "province_m"=>$this->province_m,
             "post_m"=>$this->post_m,
-            "parent"=>json_encode($this->parent),
+            "parent"=>json_encode($this->parent, JSON_UNESCAPED_UNICODE),
             "prename_p"=>$this->prename_p,
             "name_p"=>$this->name_p,
             "name_cen_p"=>$this->name_cen_p,
@@ -431,7 +431,7 @@ class AddstudentcoreMultiStep extends Component
             "parent_money"=>$this->parent_money,
             "parent_total"=>$this->parent_total,
             "parent_house"=>$this->parent_house,
-            "job_study"=>json_encode($this->job_study),
+            "job_study"=>json_encode($this->job_study, JSON_UNESCAPED_UNICODE),
             "job_detail"=>$this->job_detail,
             "total_study"=>$this->total_study,
         );
@@ -444,6 +444,6 @@ class AddstudentcoreMultiStep extends Component
         parentstudentModel::insert($values6);
 
         $data = ['name'=>$this->fname.' '.$this->surname];
-        return redirect()->route('Add student Success',$data);
+        return $data;
     }
 }
