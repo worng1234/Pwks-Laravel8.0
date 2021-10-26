@@ -46,6 +46,7 @@ class newstudentm1Model extends Model
         'motherId',
         'motherTel',
         'parent',
+        'parent_status',
         'parent_prename',
         'parentName',
         'parentNamecen',
