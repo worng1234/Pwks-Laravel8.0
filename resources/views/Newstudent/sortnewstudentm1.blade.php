@@ -43,6 +43,7 @@
 
 	<!-- CSS Just for demo purpose, don't include it in your project -->
 	<link rel="stylesheet" href="/assets/css/demo.css">
+
 </head>
 <body>
 	<div class="wrapper">
@@ -279,8 +280,7 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="page-inner mt--5">
+                <div class="page-inner mt--5">
 					<div class="row mt--2">
 						<div class="col-md-12">
 							<div class="card full-height">
@@ -344,6 +344,15 @@
 														</thead>
 														<tbody>
 														<!-- Modal Show Club Detail -->
+                                                        @foreach($datas as $data)
+                                                        <tr>
+                                                            <td>{{$data->prename}}{{$data->fname}} {{$data->nameCen}} {{$data->surname}}</td>
+                                                            <td>{{$data->finalSchool}}</td>
+                                                            <td><a  href="Newstudentm1ByID/{{$data->id}}" type="button" class="btn btn-primary"><i class="fas fa-file-archive" style="font-size: 20px; color:white;"></i></a></td>
+                                                            <td>{{$data->pic}}</td>
+                                                            <td><button class="btn btn-warning"><i class="fas fa-edit" style="font-size: 20px;"></i></button></td>
+                                                        </tr>
+                                                        @endforeach
 														<!-- อะไรไม่รู้ -->
 														<div class="modal fade" id="ModalShowDetail1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
 															<div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
@@ -367,6 +376,7 @@
 							</div>
 						</div>
 					</div>
+
 				</div>
 			</div>
 			<!-- สิ้นสุดเนื้อหา -->
@@ -536,5 +546,6 @@
 			fillColor: 'rgba(255, 165, 52, .14)'
 		});
 	</script>
+
 </body>
 </html>

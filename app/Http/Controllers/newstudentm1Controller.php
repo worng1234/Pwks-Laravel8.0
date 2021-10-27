@@ -19,42 +19,15 @@ class newstudentm1Controller extends Controller
         return view('Newstudent.agreement-newstudentm4');
     }
 
-    function Newstudentm1(){
-        return view('Newstudent.newstudentm1');
+    public function index(){
+        $datas = newstudentm1Model::all();
+        return view('Newstudent.sortnewstudentm1', compact('datas'));
     }
 
-    function Newstudentm4(){
-        return view('Newstudent.newstudentm4');
-    }
-
-    function Sortnewstudentm1(){
-        $data = newstudentm1Model::all();
-        return view('Newstudent.sortnewstudentm1');
-    }
-
-    function Sortnewstudentm4(){
-        return view('Newstudent.sortnewstudentm4');
-    }
-
-    function Newstudentm1byID(){
-        return view('Newstudent.newstidentm1byID');
-    }
-
-    function Newstudentm4byID(){
-        return view('Newstudent.newstidentm4byID');
-    }
-
-    function Fixprofilenewstudentm1(){
-        return view('Newstudent.fixprofilenewstudentm1');
-    }
-
-    function Fixprofilenewstudentm4(){
-        return view('Newstudent.fixprofilenewstudentm4');
-    }
-
-    public function GetAll()
+    public function edit($id)
     {
-        return newstudentm1Model::all();
+        $data = newstudentm1Model::findOrFail($id);
+        return view('Newstudent.newstudentm1byID', compact('data'));
     }
 
     public function store(Request $request)
@@ -150,43 +123,16 @@ class newstudentm1Controller extends Controller
     }
 
 
-    // public function up(Request $request){
-    //     $post = new File();
-    //     if($request->hasFile('image')){
-    //         $completeFileName = $request->file('image')->getClientOriginalName();
-    //         $fileNameOnly = pathinfo($completeFileName, PATHINFO_FILENAME);
-    //         $ext = $request->file('image')->getClientOriginalExtension();
-    //         $compPic = str_replace(' ', '_', $fileNameOnly). '-'. rand(). '_'. time(). '.'. $ext;
-    //         $path = $request->file('image')->storeAs('public/newstudentm1PIC', $compPic);
-    //         $post->image = $compPic;
-    //         $post->idNumber = $request['idNumber'];
 
-    //     }
-    //     if($post->save()){
-    //         return ['status' => true, 'message' => 'Post Saved Successfully'];
-    //     }else {
-    //         return ['status' => false, 'message' => 'Post Somthing Wented Wrong'];
-    //     }
-
-    // }
-
-    // public function idnumber(Request $request){
-    //     $data['idNumber'] = $request['idNumber'];
-    //     File::created($data);
-    //     return response()->json([
-    //         'message' => "Successfully created",
-    //         'success' => true
-    //     ], 200);
-    // }
     /**
      * Display the specified resource.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(newstudentm1Model $data ,$id)
     {
-        return newstudentm1Model::find($id);
+        return view('Newstudent.newstidentm1byID', compact('data'));
     }
 
     /**

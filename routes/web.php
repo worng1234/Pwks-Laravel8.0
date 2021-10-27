@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\newstudentm1Controller;
+use App\Http\Controllers\newstudentm4Controller;
 use App\Http\Controllers\studentcoreController;
 
 /*
@@ -26,12 +27,10 @@ Route::get('/AgreeMentNewstudentRegisterM1', [newstudentm1Controller::class, 'ag
 Route::get('/AgreeMentNewstudentRegisterM4', [newstudentm1Controller::class, 'agreementNewstudentm4'] );
 Route::view('/NewstudentRegisterM1', 'Newstudent.newstudentm1');
 Route::view('/NewstudentRegisterM4', 'Newstudent.newstudentm4');
-Route::get('/SortNewstudentM1', [newstudentm1Controller::class, 'Sortnewstudentm1'] );
-Route::get('/SortNewstudentM4', [newstudentm1Controller::class, 'Sortnewstudentm4'] );
-Route::get('/NewstudentM1byID', [newstudentm1Controller::class, 'Newstudentm1byID'] );
-Route::get('/NewstudentM4byID', [newstudentm1Controller::class, 'Newstudentm4byID'] );
-Route::put('/FixprofileNewstudentM1', [newstudentm1Controller::class, 'Fixprofilenewstudentm1'] );
-Route::put('/FixprofileNewstudentM4', [newstudentm1Controller::class, 'Fixprofilenewstudentm4'] );
+Route::resource('/SortNewstudentM1', newstudentm1Controller::class);
+Route::resource('/SortNewstudentM4', newstudentm4Controller::class);
+Route::get('/Newstudentm1ByID/{id}', [newstudentm1Controller::class, 'edit'] );
+Route::get('/Newstudentm4ByID/{id}', [newstudentm4Controller::class, 'edit'] );
 
 //Studentcore
 Route::get('/StudentCore', function () {

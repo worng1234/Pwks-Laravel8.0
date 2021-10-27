@@ -7,14 +7,15 @@ use Illuminate\Http\Request;
 
 class newstudentm4Controller extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+    public function edit($id)
     {
-        return newstudentm4Model::all();
+        $data = newstudentm4Model::findOrFail($id);
+        return view('Newstudent.newstudentm4byID', compact('data'));
+    }
+
+    public function index(){
+        $datas = newstudentm4Model::all();
+        return view('Newstudent.sortnewstudentm4', compact('datas'));
     }
 
     /**

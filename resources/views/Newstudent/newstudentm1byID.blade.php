@@ -166,6 +166,7 @@
 					</div>
 				</div>
 
+
 				<div class="page-inner mt--5">
 					<div class="row mt--2">
 						<div class="col-md-12">
@@ -188,25 +189,25 @@
 										<div class="col-sm-6 col-md-2">
 											<div class="form-group form-group-default">
 												<label>คำนำหน้าชื่อ</label>
-												<input id="prename" type="text" class="form-control" placeholder="">
+												<input id="prename" type="text" class="form-control" placeholder="" value="{{$data->prename}}" readonly>
 											</div>
                                         </div>
                                         <div class="col-sm-6 col-md-4">
                                             <div class="form-group form-group-default">
                                                 <label>ชื่อภาษาไทย</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->fname}}" readonly>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-2">
                                             <div class="form-group form-group-default">
                                                 <label>ชื่อกลาง</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="(ถ้ามี)">
+                                                <input id="Name" type="text" class="form-control" placeholder="(ถ้ามี)" value="{{$data->nameCen}}" readonly>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-4">
                                             <div class="form-group form-group-default">
                                                 <label>นามสกุลภาษาไทย</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->surname}}" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -214,7 +215,7 @@
                                         <div class="col-sm-6 col-md-12">
                                             <div class="form-group form-group-default">
                                                 <label>เลขประจำตัวประชาชน</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->idNumber}}" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -227,19 +228,19 @@
                                         <div class="col-sm-6 col-md-4">
 											<div class="form-group form-group-default">
 												<label>ปี พุทธศักราช:</label>
-												<input id="Name" type="text" class="form-control" placeholder="">
+												<input id="Name" type="text" class="form-control" placeholder="" value="{{$data->year}}" readonly>
 											</div>
                                         </div>
                                         <div class="col-sm-6 col-md-4">
 											<div class="form-group form-group-default">
 												<label>เดือน:</label>
-												<input id="Name" type="text" class="form-control" placeholder="">
+												<input id="Name" type="text" class="form-control" placeholder="" value="{{$data->mounth}}" readonly>
 											</div>
                                         </div>
 										<div class="col-sm-6 col-md-4">
 											<div class="form-group form-group-default">
 												<label>วัน:</label>
-												<input id="Name" type="text" class="form-control" placeholder="">
+												<input id="Name" type="text" class="form-control" placeholder="" value="{{$data->day}}" readonly>
 											</div>
                                         </div>
                                     </div>
@@ -247,31 +248,31 @@
                                         <div class="col-6 col-md-2">
 											<div class="form-group form-group-default">
 												<label>เพศสภาพ</label>
-												<input id="Name" type="text" class="form-control" placeholder="">
+												<input id="Name" type="text" class="form-control" placeholder="" value="{{$data->sex}}" readonly>
 											</div>
                                         </div>
 										<div class="col-6 col-md-2">
                                             <div class="form-group form-group-default">
                                                 <label>ศาสนา</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->religion}}" readonly>
                                             </div>
                                         </div>
 										<div class="col-6 col-md-2">
                                             <div class="form-group form-group-default">
                                                 <label>เชื้อชาติ</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->origin}}" readonly>
                                             </div>
                                         </div>
 										<div class="col-6 col-md-2">
                                             <div class="form-group form-group-default">
                                                 <label>สัญชาติ</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->nationality}}" readonly>
                                             </div>
                                         </div>
 										<div class="col-sm-6 col-md-4">
                                             <div class="form-group form-group-default">
                                                 <label>หมายเลขโทรศัพท์ที่สามารถติดต่อได้</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->tel}}" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -284,25 +285,25 @@
 										<div class="col-6 col-md-3">
                                             <div class="form-group form-group-default">
                                                 <label>บ้านเลขที่</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->houseNumber}}" readonly>
                                             </div>
                                         </div>
 										<div class="col-6 col-md-3">
                                             <div class="form-group form-group-default">
                                                 <label>หมู่</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->street}}" readonly>
                                             </div>
                                         </div>
 										<div class="col-6 col-md-3">
                                             <div class="form-group form-group-default">
                                                 <label>ซอย</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->bloc}}" readonly>
                                             </div>
                                         </div>
 										<div class="col-6 col-md-3">
                                             <div class="form-group form-group-default">
                                                 <label>ถนน</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->road}}" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -310,25 +311,25 @@
 										<div class="col-6 col-md-3">
                                             <div class="form-group form-group-default">
                                                 <label>ตำบล/แขวง</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->subDistrict}}" readonly>
                                             </div>
                                         </div>
 										<div class="col-6 col-md-3">
                                             <div class="form-group form-group-default">
                                                 <label>อำเภอ/เขต</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->district}}" readonly>
                                             </div>
                                         </div>
 										<div class="col-6 col-md-3">
                                             <div class="form-group form-group-default">
                                                 <label>จังหวัด</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->province}}" readonly>
                                             </div>
                                         </div>
 										<div class="col-6 col-md-3">
                                             <div class="form-group form-group-default">
                                                 <label>รหัสไปรษณีย์</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->post}}" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -346,25 +347,25 @@
 										<div class="col-sm-6 col-md-2">
 											<div class="form-group form-group-default">
 												<label>คำนำหน้าชื่อ</label>
-												<input id="Name" type="text" class="form-control" placeholder="">
+												<input id="Name" type="text" class="form-control" placeholder="" value="{{$data->father_prename}}" readonly>
 											</div>
                                         </div>
                                         <div class="col-sm-6 col-md-4">
                                             <div class="form-group form-group-default">
                                                 <label>ชื่อภาษาไทย</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->fatherName}}" readonly>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-2">
                                             <div class="form-group form-group-default">
                                                 <label>ชื่อกลาง</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="(ถ้ามี)">
+                                                <input id="Name" type="text" class="form-control" placeholder="(ถ้ามี)" value="{{$data->fatherNamecen}}" readonly>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-4">
                                             <div class="form-group form-group-default">
                                                 <label>นามสกุลภาษาไทย</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->fatherSurname}}" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -372,19 +373,19 @@
                                         <div class="col-sm-6 col-md-5">
                                             <div class="form-group form-group-default">
                                                 <label>เลขประจำตัวประชาชน</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->fatherId}}" readonly>
                                             </div>
                                         </div>
 										<div class="col-6 col-md-3">
                                             <div class="form-group form-group-default">
                                                 <label>อาชีพ</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->fatherJob}}" readonly>
                                             </div>
                                         </div>
                                         <div class="col-6 col-md-4">
                                             <div class="form-group form-group-default">
                                                 <label>หมายเลขโทรศัพท์ที่สามารถติดต่อได้</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->fatherTel}}" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -397,25 +398,25 @@
 										<div class="col-sm-6 col-md-2">
 											<div class="form-group form-group-default">
 												<label>คำนำหน้าชื่อ</label>
-												<input id="Name" type="text" class="form-control" placeholder="">
+												<input id="Name" type="text" class="form-control" placeholder="" value="{{$data->mother_prename}}" readonly>
 											</div>
                                         </div>
                                         <div class="col-sm-6 col-md-4">
                                             <div class="form-group form-group-default">
                                                 <label>ชื่อภาษาไทย</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->motherName}}" readonly>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-2">
                                             <div class="form-group form-group-default">
                                                 <label>ชื่อกลาง</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="(ถ้ามี)">
+                                                <input id="Name" type="text" class="form-control" placeholder="(ถ้ามี)" value="{{$data->motherNamecen}}" readonly>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-4">
                                             <div class="form-group form-group-default">
                                                 <label>นามสกุลภาษาไทย</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->motherSurname}}" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -423,19 +424,19 @@
                                         <div class="col-sm-6 col-md-5">
                                             <div class="form-group form-group-default">
                                                 <label>เลขประจำตัวประชาชน</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->motherId}}" readonly>
                                             </div>
                                         </div>
 										<div class="col-6 col-md-3">
                                             <div class="form-group form-group-default">
                                                 <label>อาชีพ</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->motherJob}}" readonly>
                                             </div>
                                         </div>
                                         <div class="col-6 col-md-4">
                                             <div class="form-group form-group-default">
                                                 <label>หมายเลขโทรศัพท์ที่สามารถติดต่อได้</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->motherTel}}" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -443,45 +444,35 @@
                                         <div class="col-sm-6 col-md-12">
                                             <label style="margin-bottom: 5px;"><small>ชื่อ/นามสกุล ผู้ปกครอง</small></label>
 
-											<div class="form-check">
-												<label class="form-radio-label">
-													<input class="form-radio-input" type="radio" name="optionsRadios" value="">
-													<span class="form-radio-sign">บิดา</span>
-												</label>
-												<label class="form-radio-label ml-1">
-													<input class="form-radio-input" type="radio" name="optionsRadios" value="">
-													<span class="form-radio-sign">มารดา</span>
-												</label>
-												<label class="form-radio-label ml-1">
-													<input class="form-radio-input" type="radio" name="optionsRadios" value="">
-													<span class="form-radio-sign">บุคคลอื่น</span>
-												</label>
-											</div>
+											<div class="form-group form-group-default">
+                                                <label>ผู้ปกครอง</label>
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->parent}}" readonly>
+                                            </div>
                                         </div>
                                     </div>
 									<div class="row">
 										<div class="col-sm-6 col-md-2">
 											<div class="form-group form-group-default">
 												<label>คำนำหน้าชื่อ</label>
-												<input id="Name" type="text" class="form-control" placeholder="">
+												<input id="Name" type="text" class="form-control" placeholder="" value="{{$data->parent_prename}}" readonly>
 											</div>
                                         </div>
                                         <div class="col-sm-6 col-md-4">
                                             <div class="form-group form-group-default">
                                                 <label>ชื่อภาษาไทย</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->parentName}}" readonly>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-2">
                                             <div class="form-group form-group-default">
                                                 <label>ชื่อกลาง</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="(ถ้ามี)">
+                                                <input id="Name" type="text" class="form-control" placeholder="(ถ้ามี)" value="{{$data->parentNamecen}}" readonly>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-4">
                                             <div class="form-group form-group-default">
                                                 <label>นามสกุลภาษาไทย</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->parentSurname}}" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -489,7 +480,7 @@
                                         <div class="col-sm-6 col-md-12">
                                             <div class="form-group form-group-default">
                                                 <label>เลขประจำตัวประชาชน</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->parentId}}" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -497,19 +488,19 @@
 										<div class="col-6 col-md-4">
 											<div class="form-group form-group-default">
 												<label>ความสัมพันธ์ผู้ปกครอง</label>
-												<input id="Name" type="text" class="form-control" placeholder="">
+												<input id="Name" type="text" class="form-control" placeholder="" value="{{$data->parent_status}}" readonly>
 											</div>
                                         </div>
 										<div class="col-6 col-md-4">
                                             <div class="form-group form-group-default">
                                                 <label>อาชีพ</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->parentJob}}" readonly>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-4">
                                             <div class="form-group form-group-default">
                                                 <label>หมายเลขโทรศัพท์ที่สามารถติดต่อได้</label>
-                                                <input id="Name" type="text" class="form-control" placeholder="">
+                                                <input id="Name" type="text" class="form-control" placeholder="" value="{{$data->parentTel}}" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -527,7 +518,7 @@
 											<div class="col-sm-6 col-md-12">
 												<div class="form-group form-group-default">
 													<label>ชื่อโรงเรียนเดิม</label>
-													<input id="Name" type="text" class="form-control" placeholder="">
+													<input id="Name" type="text" class="form-control" placeholder="" value="{{$data->finalSchool}}" readonly>
 												</div>
 											</div>
 										</div>
@@ -535,19 +526,19 @@
 											<div class="col-6 col-md-4">
 												<div class="form-group form-group-default">
 													<label>ตำบล/แขวง</label>
-													<input id="Name" type="text" class="form-control" placeholder="">
+													<input id="Name" type="text" class="form-control" placeholder="" value="{{$data->finalSchoolSubDistrict}}" readonly>
 												</div>
 											</div>
 											<div class="col-6 col-md-4">
 												<div class="form-group form-group-default">
 													<label>อำเภอ/เขต</label>
-													<input id="Name" type="text" class="form-control" placeholder="">
+													<input id="Name" type="text" class="form-control" placeholder="" value="{{$data->finalSchoolDistrict}}" readonly>
 												</div>
 											</div>
 											<div class="col-sm-6 col-md-4">
 												<div class="form-group form-group-default">
 													<label>จังหวัด</label>
-													<input id="Name" type="text" class="form-control" placeholder="">
+													<input id="Name" type="text" class="form-control" placeholder="" value="{{$data->finalSchoolProvince}}" readonly>
 												</div>
 											</div>
 										</div>
@@ -560,69 +551,32 @@
 									<div class="row">
 										<div class="col-sm-6 col-md-12">
 											<div class="form-check">
-												<label class="form-radio-label">
-													<input class="form-radio-input" type="radio" name="optionsRadios" value="">
-													<span class="form-radio-sign">ไม่มี</span>
-												</label><br><br>
-												<label class="form-radio-label">
-													<input class="form-radio-input" type="radio" name="optionsRadios" value="">
-													<span class="form-radio-sign">ผู้ด้อยโอกาส/ฐานะยากจน</span>
-												</label><br><br>
-												<label class="form-radio-label">
-													<input class="form-radio-input" type="radio" name="optionsRadios" value="">
-													<span class="form-radio-sign">ผู้พิการ/เด็กพิเศษ</span>
-												</label>
+                                            <div class="col-6 col-md-4">
 												<div class="form-group form-group-default">
-													<label>โปรดระบุประเภทความพิเศษ</label>
-													<input id="Name" type="text" class="form-control" placeholder="">
+													<label>ผู้ด้อยโอกาส/ฐานะยากจน</label>
+													<input id="Name" type="text" class="form-control" placeholder="" value="{{$data->poorPerson}}" readonly>
 												</div>
-												<label class="form-radio-label">
-													<input class="form-radio-input" type="radio" name="optionsRadios" value="">
-													<span class="form-radio-sign">อื่นๆ</span>
-												</label>
+											</div>
+                                            <div class="col-6 col-md-4">
 												<div class="form-group form-group-default">
-													<label>โปรดระบุ</label>
-													<input id="Name" type="text" class="form-control" placeholder="">
+													<label>ผู้พิการ/เด็กพิเศษ</label>
+													<input id="Name" type="text" class="form-control" placeholder="" value="{{$data->disabled}}" readonly>
 												</div>
+											</div>
+                                            <div class="col-6 col-md-4">
+												<div class="form-group form-group-default">
+													<label>อื่นๆ</label>
+													<input id="Name" type="text" class="form-control" placeholder="" value="{{$data->etc}}" readonly>
+												</div>
+											</div>
+
 											</div>
 										</div>
 									</div>
-
-									<!-- อัพโหลดรูปภาพ -->
-									<div style="border-radius: 5px; background-color: #8B469B; margin-bottom: 15px; color: white;">
-										<p  style="margin-left: 25px;  font-size: 15px;"><b>อัพโหลดข้อมูลรูปภาพ &nbsp;&nbsp;( นามสกุลไฟล์ภาพ&nbsp;&nbsp;.jpg &nbsp;หรือ&nbsp; .png&nbsp;&nbsp;เท่านั้น )</b></p>
-									</div>
-									<div class="row">
-										<div class="col-sm-6 col-md-4">
-											<div class="form-group">
-												<label for="exampleFormControlFile1">รูปถ่ายหน้าตรงชุดนักเรียน ขนาด 1.5 นิ้ว</label>
-												<input type="file" class="form-control-file" id="exampleFormControlFile1">
-											</div>
-										</div>
-										<div class="col-sm-6 col-md-4">
-											<div class="form-group">
-												<label for="exampleFormControlFile1">สำเนาบัตรประชาชน</label>
-												<input type="file" class="form-control-file" id="exampleFormControlFile1">
-											</div>
-										</div>
-										<div class="col-sm-6 col-md-4">
-											<div class="form-group">
-												<label for="exampleFormControlFile1">สำเนาทะเบียนบ้าน</label>
-												<input type="file" class="form-control-file" id="exampleFormControlFile1">
-											</div>
-										</div>
-									</div><br><br>
-
-
-
-
-
-
 								</div>
 								<div class="card-footer" align="center">
-									<p style="text-align:center">นักเรียนโปรดตรวจสอบข้อมูลพื้นฐานนักเรียนที่กรอกให้ถูกต้อง<br>
-										เมื่อนักเรียนมั่นใจแล้วให้กดปุ่ม &nbsp;<b>&quot;ยืนยัน&quot;</b>&nbsp; ด้านล่าง</p>
-									<button class="btn btn-primary"><strong>ยืนยันข้อมูล</strong></button>
+
+									<a href="http://127.0.0.1:8000/SortNewstudentM1" class="btn btn-danger"><strong>ย้อนกลับ</strong></a>
 								</div><br>
 
 
