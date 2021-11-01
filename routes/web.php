@@ -5,6 +5,8 @@ use App\Http\Controllers\newstudentm1Controller;
 use App\Http\Controllers\newstudentm4Controller;
 use App\Http\Controllers\studentcoreController;
 
+use App\Http\Controllers\TestUPController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,8 +31,8 @@ Route::view('/NewstudentRegisterM1', 'Newstudent.newstudentm1');
 Route::view('/NewstudentRegisterM4', 'Newstudent.newstudentm4');
 Route::resource('/SortNewstudentM1', newstudentm1Controller::class);
 Route::resource('/SortNewstudentM4', newstudentm4Controller::class);
-Route::get('/Newstudentm1ByID/{id}', [newstudentm1Controller::class, 'edit'] );
-Route::get('/Newstudentm4ByID/{id}', [newstudentm4Controller::class, 'edit'] );
+
+Route::resource('testup', TestUPController::class);
 
 //Studentcore
 Route::get('/StudentCore', function () {

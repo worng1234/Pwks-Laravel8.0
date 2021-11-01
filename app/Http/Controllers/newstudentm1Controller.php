@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Http\Livewire\NewstudnetM1;
 use App\Models\newstudentm1Model;
 use Illuminate\Http\Request;
 use App\Models\File;
@@ -130,9 +131,10 @@ class newstudentm1Controller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(newstudentm1Model $data ,$id)
+    public function show(newstudentm1Model $newstudentm1Model ,$id)
     {
-        return view('Newstudent.newstidentm1byID', compact('data'));
+        $newstudentm1Model = newstudentm1Model::findOrFail($id);
+        return view('Newstudent.fixprofilenewstudentm1', compact('newstudentm1Model'));
     }
 
     /**
@@ -142,12 +144,18 @@ class newstudentm1Controller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, newstudentm1Model $newstudentm1Model)
     {
-        $newstudentm1 = newstudentm1Model::find($id);
-        $newstudentm1->update($request->all());
-        return $newstudentm1;
+        $request->validate([
+            'prename' => 'required',
+            'fname' => 'required',
+        ]);
+        $newstudentm1Model->update($request->all());
+        return redirect()->route('SortNewstudentM1.index')
+        ->with('success', 'Update successfully');
     }
+
+
 
     /**
      * Remove the specified resource from storage.

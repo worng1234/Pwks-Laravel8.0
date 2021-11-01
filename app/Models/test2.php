@@ -7,13 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class test2 extends Model
 {
+    use HasFactory;
     protected $table = "test2";
     protected $fillable = [
-        'name',
-        'surname',
-        'image',
-        'file_pdf',
-        'CheckBox',
+        'address',
         'id_number2'
     ];
 }

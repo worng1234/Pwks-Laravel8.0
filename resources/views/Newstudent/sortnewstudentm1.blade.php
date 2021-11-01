@@ -344,13 +344,13 @@
 														</thead>
 														<tbody>
 														<!-- Modal Show Club Detail -->
-                                                        @foreach($datas as $data)
+                                                        @foreach($datas as $key => $value)
                                                         <tr>
-                                                            <td>{{$data->prename}}{{$data->fname}} {{$data->nameCen}} {{$data->surname}}</td>
-                                                            <td>{{$data->finalSchool}}</td>
-                                                            <td><a  href="Newstudentm1ByID/{{$data->id}}" type="button" class="btn btn-primary"><i class="fas fa-file-archive" style="font-size: 20px; color:white;"></i></a></td>
-                                                            <td>{{$data->pic}}</td>
-                                                            <td><button class="btn btn-warning"><i class="fas fa-edit" style="font-size: 20px;"></i></button></td>
+                                                            <td>{{$value->prename}}{{$value->fname}} {{$value->nameCen}} {{$value->surname}}</td>
+                                                            <td>{{$value->finalSchool}}</td>
+                                                            <td><a  href="{{ route('SortNewstudentM1.edit',$value->id)}}" type="button" class="btn btn-primary"><i class="fas fa-file-archive" style="font-size: 20px; color:white;"></i></a></td>
+                                                            <td>{{$value->pic}}</td>
+                                                            <td><a href="{{ route('SortNewstudentM1.show',$value->id)}}" class="btn btn-warning"><i class="fas fa-edit" style="font-size: 20px;"></i></a></td>
                                                         </tr>
                                                         @endforeach
 														<!-- อะไรไม่รู้ -->
