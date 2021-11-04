@@ -23,7 +23,7 @@
                                     <p style="margin-left: 25px;  font-size: 15px;"><b>ข้อมูลเบื้องต้น</b></p>
                                 </div>
                                 <div class="row">
-                                    <div class="col-6 col-md-5">
+                                    <div class="col-6 col-md-3">
                                         <div class="form-group form-group-default">
                                             <label>เลขประจำตัวนักเรียน</label>
                                             <input type="text" class="form-control" placeholder="" wire:model="studentID">
@@ -47,7 +47,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-6 col-md-2">
+                                    <div class="col-6 col-md-3">
                                         <div class="form-group form-group-default">
                                             <label>ระดับชั้น</label>
                                             <select class="form-control" id="formGroupDefaultSelect" wire:model="student_class">
@@ -79,7 +79,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-md-12">
+                                    <div class="col-5 col-md-1">
                                         <div class="form-group form-group-default">
                                             <label>เลขที่</label>
                                             <input  type="text" class="form-control" placeholder="" wire:model="student_number">

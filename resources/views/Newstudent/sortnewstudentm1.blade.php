@@ -348,9 +348,9 @@
                                                         <tr>
                                                             <td>{{$value->prename}}{{$value->fname}} {{$value->nameCen}} {{$value->surname}}</td>
                                                             <td>{{$value->finalSchool}}</td>
-                                                            <td><a  href="{{ route('SortNewstudentM1.show',$value->id)}}" type="button" class="btn btn-primary"><i class="fas fa-file-archive" style="font-size: 20px; color:white;"></i></a></td>
+                                                            <td><a  href="{{ route('SortNewstudentM1.show',$value->id)}}" type="button" class="btn btn-primary"><i class="fas fa-file-archive" ></i></a></td>
                                                             <td>{{$value->pic}}</td>
-                                                            <td><a href="{{ route('SortNewstudentM1.edit',$value->id)}}" class="btn btn-warning"><i class="fas fa-edit" style="font-size: 20px;"></i></a></td>
+                                                            <td><a href="{{ route('SortNewstudentM1.edit',$value->id)}}" class="btn btn-warning"><i class="fas fa-edit" ></i></a></td>
                                                         </tr>
                                                         @endforeach
 														<!-- อะไรไม่รู้ -->

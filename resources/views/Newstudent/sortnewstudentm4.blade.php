@@ -353,9 +353,9 @@
                                                                 อันดับ 2 : {{$value->major_name2}} <br>
                                                                 อันดับ 3 : {{$value->major_name3}} <br>
                                                                 อันดับ 4 : {{$value->major_name4}} <br></td>
-                                                            <td><a href="{{ route('SortNewstudentM4.show',$value->id)}}" class="btn btn-primary"><i class="fas fa-file-archive" style="font-size: 20px;"></i></a></td>
+                                                            <td><a href="{{ route('SortNewstudentM4.show',$value->id)}}" class="btn btn-primary"><i class="fas fa-file-archive" ></i></a></td>
                                                             <td>{{$value->pic}}</td>
-                                                            <td><a href="{{ route('SortNewstudentM4.edit',$value->id)}}" class="btn btn-warning"><i class="fas fa-edit" style="font-size: 20px;"></i></a></td>
+                                                            <td><a href="{{ route('SortNewstudentM4.edit',$value->id)}}" class="btn btn-warning"><i class="fas fa-edit" ></i></a></td>
                                                         </tr>
                                                         @endforeach
 														<!-- อะไรไม่รู้ -->

@@ -371,7 +371,7 @@
 																<td align="center">{{$value->student_room}}</td>
 																<td align="center">
 																	<form role="form" method="post" action="?r=admin_student_edit">
-																		<button type="submit" class="btn btn-primary btn-xs"><i class="fas fa-edit"></i></button>
+																		<a href="{{ route('StudentCore.show', $value->id)}}" class="btn btn-primary btn-xs"><i class="fas fa-edit"></i></a>
 																		<input type="hidden" name="hid" value="1" />
 																		<a href="" class="btn btn-danger btn-xs" title="" onclick="return confirm('Lorem ipsum dolor, sit amet consectet et adipis icing elit. Ab commodi iure minus laboriosam placeat quia, dolorem animi.')"> <i class="fas fa-trash"></i> </a>
 																	</form>

@@ -217,12 +217,12 @@
 						</li>
 
 						<li class="nav-item">
-							<a data-toggle="collapse" href="#forms">
+							<a data-toggle="collapse" href="#formss">
 								<i class="fas fa-id-card-alt"></i>
 								<p>รับสมัครนักเรียนใหม่</p>
 								<span class="caret"></span>
 							</a>
-							<div class="collapse" id="forms">
+							<div class="collapse" id="formss">
 								<ul class="nav nav-collapse">
 									<li>
 										<a href="{{url('/AgreeMentNewstudentRegisterM1')}}">

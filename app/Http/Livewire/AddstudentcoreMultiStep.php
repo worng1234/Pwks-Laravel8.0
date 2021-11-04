@@ -240,6 +240,7 @@ class AddstudentcoreMultiStep extends Component
             "student_major"=>$this->student_major,
             "student_class"=>$this->student_class,
             "student_room"=>$this->student_room,
+            "student_number"=>$this->student_number,
             "prename"=>$this->prename,
             "prename_eng"=>$this->prename_eng,
             "name_eng"=>$this->name_eng,
