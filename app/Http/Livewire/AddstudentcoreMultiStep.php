@@ -18,6 +18,7 @@ class AddstudentcoreMultiStep extends Component
     public $student_major;
     public $student_class;
     public $student_room;
+    public $student_number;
     public $prename;
     public $prename_eng;
     public $name_eng;

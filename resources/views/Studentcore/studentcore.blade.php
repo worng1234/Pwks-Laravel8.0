@@ -360,14 +360,15 @@
 															</tr>
 														</thead>
 														<tbody>
+                                                            @foreach ($data as $key => $value)
 															<tr>
-																<td align="center">1</td>
-																<td align="center">50190</td>
-																<td align="center">1</td>
-																<td>นาย เรียนดี  มีเมตตา</td>
-																<td align="center">ชาย</td>
-																<td align="center">มัธยมศึกษาปีที่ 5</td>
-																<td align="center">2</td>
+																<td align="center">{{$value->id}}</td>
+																<td align="center">{{$value->studentID}}</td>
+																<td align="center">{{$value->student_number}}</td>
+																<td>{{$value->prename}} {{$value->fname}}  {{$value->surname}}</td>
+																<td align="center">{{$value->gender}}</td>
+																<td align="center">{{$value->student_class}}</td>
+																<td align="center">{{$value->student_room}}</td>
 																<td align="center">
 																	<form role="form" method="post" action="?r=admin_student_edit">
 																		<button type="submit" class="btn btn-primary btn-xs"><i class="fas fa-edit"></i></button>
@@ -376,6 +377,7 @@
 																	</form>
 																</td>
 															</tr>
+                                                            @endforeach
 
 														<!-- Modal Show Club Detail -->
 														<!-- อะไรไม่รู้ -->

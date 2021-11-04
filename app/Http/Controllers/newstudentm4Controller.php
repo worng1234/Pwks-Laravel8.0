@@ -9,13 +9,13 @@ class newstudentm4Controller extends Controller
 {
     public function edit($id)
     {
-        $data = newstudentm4Model::findOrFail($id);
-        return view('Newstudent.newstudentm4byID', compact('data'));
+        $newstudentm4Model = newstudentm4Model::findOrFail($id);
+        return view('Newstudent.fixprofilenewstudentm4', compact('newstudentm4Model'));
     }
 
     public function index(){
-        $datas = newstudentm4Model::all();
-        return view('Newstudent.sortnewstudentm4', compact('datas'));
+        $data = newstudentm4Model::all();
+        return view('Newstudent.sortnewstudentm4', compact('data'));
     }
 
     /**
@@ -137,7 +137,8 @@ class newstudentm4Controller extends Controller
      */
     public function show($id)
     {
-        return newstudentm4Model::find($id);
+        $data = newstudentm4Model::findOrFail($id);
+        return view('Newstudent.newstudentm4byID', compact('data'));
     }
 
     /**
@@ -149,9 +150,11 @@ class newstudentm4Controller extends Controller
      */
     public function update(Request $request, $id)
     {
-        $newstudentm4 = newstudentm4Model::find($id);
-        $newstudentm4->update($request->all());
-        return $newstudentm4;
+        $newstudentm4Model = newstudentm4Model::find($id);
+        $newstudentm4Model->update($request->all());
+        // return $newstudentm4Model;
+        return redirect()->route('SortNewstudentM4.index')
+        ->with('success', 'Update successfully');
     }
 
     /**

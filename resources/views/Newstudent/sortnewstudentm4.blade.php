@@ -345,17 +345,17 @@
 														</thead>
 														<tbody>
 														<!-- Modal Show Club Detail -->
-                                                        @foreach ($datas as $data)
+                                                        @foreach ($data as $key => $value)
                                                         <tr>
-                                                            <td>{{$data->prename}}{{$data->fname}} {{$data->name_cen}} {{$data->surname}}</td>
-                                                            <td>{{$data->final_school}}</td>
-                                                            <td>อันดับ 1 : {{$data->major_name1}} <br>
-                                                                อันดับ 2 : {{$data->major_name2}} <br>
-                                                                อันดับ 3 : {{$data->major_name3}} <br>
-                                                                อันดับ 4 : {{$data->major_name4}} <br></td>
-                                                            <td><a href="Newstudentm4ByID/{{$data->id}}" class="btn btn-primary"><i class="fas fa-file-archive" style="font-size: 20px;"></i></a></td>
-                                                            <td>{{$data->pic}}</td>
-                                                            <td><button class="btn btn-warning"><i class="fas fa-edit" style="font-size: 20px;"></i></button></td>
+                                                            <td>{{$value->prename}}{{$value->fname}} {{$value->name_cen}} {{$value->surname}}</td>
+                                                            <td>{{$value->final_school}}</td>
+                                                            <td>อันดับ 1 : {{$value->major_name1}} <br>
+                                                                อันดับ 2 : {{$value->major_name2}} <br>
+                                                                อันดับ 3 : {{$value->major_name3}} <br>
+                                                                อันดับ 4 : {{$value->major_name4}} <br></td>
+                                                            <td><a href="{{ route('SortNewstudentM4.show',$value->id)}}" class="btn btn-primary"><i class="fas fa-file-archive" style="font-size: 20px;"></i></a></td>
+                                                            <td>{{$value->pic}}</td>
+                                                            <td><a href="{{ route('SortNewstudentM4.edit',$value->id)}}" class="btn btn-warning"><i class="fas fa-edit" style="font-size: 20px;"></i></a></td>
                                                         </tr>
                                                         @endforeach
 														<!-- อะไรไม่รู้ -->

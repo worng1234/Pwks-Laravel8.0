@@ -7,7 +7,7 @@
 	<link rel="icon" href="/assets/img/logo3.png" type="image/x-icon"/>
 
 	<!-- Fonts and icons -->
-	<script src="/public/assets/js/plugin/webfont/webfont.min.js"></script>
+	<script src="../assets/js/plugin/webfont/webfont.min.js"></script>
 	<script>
 		WebFont.load({
 			google: {"families":["Lato:300,400,700,900"]},
@@ -105,6 +105,117 @@
 							</a>
 						</li>
 
+                        <li class="nav-item">
+							<a data-toggle="collapse" href="#forms">
+								<i class="fas fa-user-graduate"></i>
+								<p>จัดการข้อมูลนักเรียน</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="forms">
+								<ul class="nav nav-collapse">
+									<li>
+										<a data-toggle="collapse" href="#forms1">
+											<span class="sub-item">ข้อมูลนักเรียนพื้นฐาน</span>
+											<span class="caret"></span>
+										</a>
+										<div class="collapse" id="forms1">
+											<ul class="nav nav-collapse subnav">
+												<li class="active">
+													<a href="academic-info-all.html">
+														<span class="sub-item">แสดงข้อมูลนักเรียน</span>
+													</a>
+												</li>
+												<li>
+													<a href="academic-info-add.html">
+														<span class="sub-item">เพิ่มข้อมูลนักเรียน</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+
+									<li>
+										<a data-toggle="collapse" href="#forms2">
+											<span class="sub-item">เลื่อนชั้นเรียน</span>
+											<span class="caret"></span>
+										</a>
+										<div class="collapse" id="forms2">
+											<ul class="nav nav-collapse subnav">
+												<li>
+													<a href="#">
+														<span class="sub-item">แสดงข้อมูลเลื่อนชั้นเรียน</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+
+									<li>
+										<a data-toggle="collapse" href="#forms3">
+											<span class="sub-item">จบการศึกษา</span>
+											<span class="caret"></span>
+										</a>
+										<div class="collapse" id="forms3">
+											<ul class="nav nav-collapse subnav">
+												<li>
+													<a href="academic-graduated-all.html">
+														<span class="sub-item">แสดงข้อมูลจบการศึกษา</span>
+													</a>
+												</li>
+												<li>
+													<a href="academic-graduated-all.html">
+														<span class="sub-item">เพิ่มนักเรียนจบการศึกษา</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+
+									<li>
+										<a data-toggle="collapse" href="#forms4">
+											<span class="sub-item">ย้ายสถานศึกษา</span>
+											<span class="caret"></span>
+										</a>
+										<div class="collapse" id="forms4">
+											<ul class="nav nav-collapse subnav">
+												<li>
+													<a href="academic-move-all.html">
+														<span class="sub-item">แสดงข้อมูลย้ายสถานศึกษา</span>
+													</a>
+												</li>
+												<li>
+													<a href="academic-move-add.html">
+														<span class="sub-item">เพิ่มนักเรียนย้ายสถานศึกษา</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+
+									<li>
+										<a data-toggle="collapse" href="#forms5">
+											<span class="sub-item">ออกกลางคัน</span>
+											<span class="caret"></span>
+										</a>
+										<div class="collapse" id="forms5">
+											<ul class="nav nav-collapse subnav">
+												<li>
+													<a href="academic-out-all.html">
+														<span class="sub-item">แสดงข้อมูลออกกลางคัน</span>
+													</a>
+												</li>
+												<li>
+													<a href="academic-out-add.html">
+														<span class="sub-item">เพิ่มนักเรียนออกกลางคัน</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#forms">
 								<i class="fas fa-id-card-alt"></i>
@@ -128,25 +239,29 @@
 						</li>
 
 						<li class="nav-item ">
-							<a href="#">
-								<i class="fas fa-book-open"></i>
-								<p>คู่มือการใช้งาน</p>
+							<a data-toggle="collapse" href="#agree">
+								<i class="fas fa-id-card-alt"></i>
+								<p>จัดการข้อมูลนักเรียนใหม่</p>
+								<span class="caret"></span>
 							</a>
-						</li>
-						<li class="nav-item ">
-							<a href="#">
-								<i class="fas fa-comments"></i>
-								<p>ติดต่อเรา</p>
-							</a>
+							<div class="collapse" id="agree">
+								<ul class="nav nav-collapse">
+									<li >
+									<li>
+										<a href="{{ route('SortNewstudentM1.index')}}">
+											<span class="sub-item">ตรวจสอบรายชื่อผู้สมัครเข้าเรียนชั้นมัธยมศึกษาปีที่ 1</span>
+										</a>
+									</li>
+									<li>
+										<a href="{{ route('SortNewstudentM4.index')}}">
+											<span class="sub-item">ตรวจสอบรายชื่อผู้สมัครเข้าเรียนชั้นมัธยมศึกษาปีที่ 4</span>
+										</a>
+									</li>
+								</ul>
+							</div>
 						</li>
 
-						<li class="nav-item">
-							<a href="widgets.html">
-								<i class="fas fa-desktop"></i>
-								<p>ต้นฉบับ</p>
-								<span class="badge badge-success">4</span>
-							</a>
-						</li>
+
 
 					</ul>
 				</div>

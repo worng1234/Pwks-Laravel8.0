@@ -27,8 +27,8 @@ class newstudentm1Controller extends Controller
 
     public function edit($id)
     {
-        $data = newstudentm1Model::findOrFail($id);
-        return view('Newstudent.newstudentm1byID', compact('data'));
+        $newstudentm1Model = newstudentm1Model::findOrFail($id);
+        return view('Newstudent.fixprofilenewstudentm1', compact('newstudentm1Model'));
     }
 
     public function store(Request $request)
@@ -131,10 +131,10 @@ class newstudentm1Controller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(newstudentm1Model $newstudentm1Model ,$id)
+    public function show($id)
     {
-        $newstudentm1Model = newstudentm1Model::findOrFail($id);
-        return view('Newstudent.fixprofilenewstudentm1', compact('newstudentm1Model'));
+        $data = newstudentm1Model::findOrFail($id);
+        return view('Newstudent.newstudentm1byID', compact('data'));
     }
 
     /**
@@ -144,12 +144,9 @@ class newstudentm1Controller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, newstudentm1Model $newstudentm1Model)
+    public function update(Request $request,$id)
     {
-        $request->validate([
-            'prename' => 'required',
-            'fname' => 'required',
-        ]);
+        $newstudentm1Model = newstudentm1Model::find($id);
         $newstudentm1Model->update($request->all());
         return redirect()->route('SortNewstudentM1.index')
         ->with('success', 'Update successfully');

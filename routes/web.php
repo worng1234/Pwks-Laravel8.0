@@ -35,6 +35,4 @@ Route::resource('/SortNewstudentM4', newstudentm4Controller::class);
 Route::resource('testup', TestUPController::class);
 
 //Studentcore
-Route::get('/StudentCore', function () {
-    return view('Studentcore.studentcore');
-});
+Route::resource('/StudentCore', studentcoreController::class);

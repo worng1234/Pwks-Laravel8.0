@@ -74,11 +74,8 @@ class TestUPController extends Controller
 
         $data = test2::find($id);
         $data->update($request->all());
-        return $data;
-
-
-        // return redirect()->route('testup.index')
-        //     ->with('success', 'Test updated successfully');
+        return redirect()->route('testup.index')
+            ->with('success', 'Test updated successfully');
     }
 
     /**

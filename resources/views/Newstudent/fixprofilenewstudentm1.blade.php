@@ -177,7 +177,7 @@
 							<div class="card full-height">
 								<div class="card-header">
 									<div class="card-head-row">
-										<div class="card-title"><i class="fas fa-id-card-alt"></i> &nbsp;&nbsp; รับสมัครนักเรียนใหม่ <i class="flaticon-right-arrow"></i> สมัครเข้าเรียนชั้นมัธยมศึกษาปีที่ 1</div>
+										<div class="card-title"><i class="fas fa-id-card-alt"></i> &nbsp;&nbsp; จัดการข้อมูลนักเรียน <i class="flaticon-right-arrow"></i> ผู้สมัครเข้าเรียนชั้นมัธยมศึกษาปีที่ 1</div>
 									</div>
 								</div>
 
@@ -580,8 +580,8 @@
 						    </div>
                         </div>
                         <div class="card-footer" align="center">
-
-                            <button type="submit" class="btn btn-success">ยืนยัน</button>
+                            <button type="submit" class="btn btn-success"><strong>ยืนยัน</strong></button>
+                            <a href="http://127.0.0.1:8000/SortNewstudentM1" class="btn btn-danger" style="margin-left: 20px;"><strong>ย้อนกลับ</strong></a>
 						</div><br>
                     </div>
                 </div>

@@ -17,6 +17,7 @@ class studentcoreModels extends Model
         'student_major',
         'student_class',
         'student_room',
+        'student_number',
         'prename',
         'prename_eng',
         'name_eng',
@@ -40,22 +41,5 @@ class studentcoreModels extends Model
         'rememberToken',
     ];
 
-     /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
-    protected $hidden = [
-        'student_id',
-        'remember_token',
-    ];
 
-    /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
 }

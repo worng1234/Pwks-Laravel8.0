@@ -14,17 +14,22 @@ use Illuminate\Support\Facades\DB;
 
 class studentcoreController extends Controller
 {
-    public function getAll(){
-       return studentcoreModels::all();
+    public function index(){
+        $data = studentcoreModels::all();
+        return view('Studentcore.studentcore', compact('data'));
     }
 
-    public function getID($id){
-        $student =  studentcoreModels::find($id);
-        if(is_null($student)){
-            return response()->json(['message' => 'Student Not found'], 404);
-        }
-        return response()->json($student::find($id), 200);
+    public function show($id){
+        $studentcore = studentcoreModels::find($id);
+        $addressstudent = addressstudentModel::find($id);
+        $healtystudent = healtystudentModel::find($id);
+        $talentstudent = talentstudentModel::find($id);
+        $studentdetail = studentdetailModel::find($id);
+        $parentstudentModel = parentstudentModel::find($id);
+        return view('Studentcore.studentcorebyID', compact('$studentcore','$addressstudent','$healtystudent','$talentstudent','$studentdetail','parentstudentModel'));
     }
+
+
 
     //Post
     public function address(Request $request){

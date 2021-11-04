@@ -79,6 +79,12 @@
                                             </select>
                                         </div>
                                     </div>
+                                    <div class="col-sm-6 col-md-12">
+                                        <div class="form-group form-group-default">
+                                            <label>เลขที่</label>
+                                            <input  type="text" class="form-control" placeholder="" wire:model="student_number">
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-6 col-md-12">
