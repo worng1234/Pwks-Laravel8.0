@@ -302,7 +302,9 @@
                 </div>
 
 
-                <form>
+                <form action="{{ route('StudentCore.update', $studentcore->id,$addressstudent->id,$healtystudent->id,$talentstudent->id,$studentdetail->id,$parentstudentModel->id,)}}" method="post">
+                    @csrf
+                    @method('PUT')
                     <!-- ข้อมูลเบื้องต้น -->
                     <div class="step-one">
                         <div class="page-inner mt--5">
@@ -323,31 +325,31 @@
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>เลขประจำตัวนักเรียน</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="studentID" value="{{$studentcore->studentID}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>แผนการเรียน</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="student_major" value="{{$studentcore->student_major}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>ระดับชั้น</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="student_class" value="{{$studentcore->student_class}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>ลำดับห้อง</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="student_room" value="{{$studentcore->student_room}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-5 col-md-1">
                                                     <div class="form-group form-group-default">
                                                         <label>เลขที่</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="student_number" value="{{$studentcore->student_number}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -355,7 +357,7 @@
                                                 <div class="col-sm-6 col-md-12">
                                                     <div class="form-group form-group-default">
                                                         <label>เลขประจำตัวประชาชน</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="student_id_card" value="{{$studentcore->student_id_card}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -363,25 +365,25 @@
                                                 <div class="col-sm-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>คำนำหน้าชื่อ</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="prename" value="{{$studentcore->prename}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>ชื่อภาษาไทย</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="fname" value="{{$studentcore->fname}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>ชื่อกลาง</label>
-                                                        <input type="text" class="form-control" placeholder="(ถ้ามี)">
+                                                        <input type="text" class="form-control" placeholder="(ถ้ามี)" name="name_cen" value="{{$studentcore->name_cen}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>นามสกุลภาษาไทย</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="surname" value="{{$studentcore->surname}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -389,25 +391,25 @@
                                                 <div class="col-sm-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>คำนำหน้าชื่อ(ภาษาอังกฤษ)</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="prename_eng" value="{{$studentcore->prename_eng}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>ชื่อ(ภาษาอังกฤษ)</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="name_eng" value="{{$studentcore->name_eng}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>ชื่อกลาง(ภาษาอังกฤษ)</label>
-                                                        <input type="text" class="form-control" placeholder="(ถ้ามี)">
+                                                        <input type="text" class="form-control" placeholder="(ถ้ามี)" name="name_cen_eng" value="{{$studentcore->name_cen_eng}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>นามสกุล(ภาษาอังกฤษ)</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="surname_eng" value="{{$studentcore->surname_eng}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -421,19 +423,19 @@
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>ปี พุทธศักราช:</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="birth_year" value="{{$studentcore->birth_year}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>เดือน:</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="birth_month" value="{{$studentcore->birth_month}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>วัน:</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="birth_day" value="{{$studentcore->birth_day}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -441,37 +443,37 @@
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>ชื่อเล่น</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="nickname" value="{{$studentcore->nickname}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>เพศสภาพ</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="gender" value="{{$studentcore->gender}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>หมู่เลือด</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="bloodgroup" value="{{$studentcore->bloodgroup}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>ศาสนา</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="religion" value="{{$studentcore->religion}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>เชื้อชาติ</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="origin" value="{{$studentcore->origin}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>สัญชาติ</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="nationality" value="{{$studentcore->nationality}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -479,19 +481,19 @@
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>ภาษาที่ใช้ เช่น ไทย จีน อังกฤษ ญี่ปุ่น</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="language" value="{{$studentcore->language}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>หมายเลขโทรศัพท์ที่สามารถติดต่อได้</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="tel_s" value="{{$studentcore->tel_s}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>อีเมล์ (name@example.com)</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="email" value="{{$studentcore->email}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -502,31 +504,31 @@
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>บ้านเลขที่</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="house_number" value="{{$addressstudent->house_number}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>หมู่</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="group" value="{{$addressstudent->group}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>ชื่อหมู่บ้าน</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="village" value="{{$addressstudent->village}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>ซอย</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="alley" value="{{$addressstudent->alley}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>ถนน</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="street" value="{{$addressstudent->street}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -534,25 +536,25 @@
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>ตำบล/แขวง</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="subdistrict" value="{{$addressstudent->subdistrict}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>อำเภอ/เขต</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="district" value="{{$addressstudent->district}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>จังหวัด</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="province" value="{{$addressstudent->province}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>รหัสไปรษณีย์</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="post" value="{{$addressstudent->post}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -566,7 +568,7 @@
                                                 <div class="col-sm-6 col-md-12">
                                                     <div class="form-group form-group-default">
                                                         <label>ที่อยู่ปัจจุบัน</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="address_now" value="{{$addressstudent->address_now}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -574,31 +576,31 @@
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>บ้านเลขที่</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="house_number_n" value="{{$addressstudent->house_number_n}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>หมู่</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="group_n" value="{{$addressstudent->group_n}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>ชื่อหมู่บ้าน</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="village_n" value="{{$addressstudent->village_n}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>ซอย</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="alley_n" value="{{$addressstudent->alley_n}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>ถนน</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="street_n" value="{{$addressstudent->street_n}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -606,25 +608,25 @@
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>ตำบล/แขวง</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="subdistrict_n" value="{{$addressstudent->subdistrict_n}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>อำเภอ/เขต</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="district_n" value="{{$addressstudent->district_n}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>จังหวัด</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="province_n" value="{{$addressstudent->province_n}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>รหัสไปรษณีย์</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="post_n" value="{{$addressstudent->post_n}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -640,19 +642,19 @@
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>ชื่อโรงเรียนเดิม</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="final_school" value="{{$talentstudent->final_school}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>จบชั้น</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="final_class" value="{{$talentstudent->final_class}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>ผลการเรียนเฉลี่ย</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="avg_grade" value="{{$talentstudent->avg_grade}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -660,19 +662,19 @@
                                                 <div class="col-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>ตำบล/แขวง</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="f_subdistrict" value="{{$talentstudent->f_subdistrict}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>อำเภอ/เขต</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="f_district" value="{{$talentstudent->f_district}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>จังหวัด</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="f_province" value="{{$talentstudent->f_province}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -686,25 +688,25 @@
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>1)</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="like_subject1" value="{{$talentstudent->like_subject1}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>2)</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="like_subject2" value="{{$talentstudent->like_subject2}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>3)</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="like_subject3" value="{{$talentstudent->like_subject3}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>4)</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="like_subject4" value="{{$talentstudent->like_subject4}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -717,25 +719,25 @@
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>1)</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="unlike_subject1" value="{{$talentstudent->unlike_subject1}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>2)</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="unlike_subject2" value="{{$talentstudent->unlike_subject2}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>3)</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="unlike_subject3" value="{{$talentstudent->unlike_subject3}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>4)</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="unlike_subject4" value="{{$talentstudent->unlike_subject4}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -748,19 +750,19 @@
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>อยากประกอบอาชีพอะไร</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="dream_job" value="{{$talentstudent->dream_job}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>เพราะอะไร</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="because" value="{{$talentstudent->because}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>ความสามารถพิเศษ</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="talent" value="{{$talentstudent->talent}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -768,13 +770,13 @@
                                                 <div class="col-sm-6 col-md-6">
                                                     <div class="form-group form-group-default">
                                                         <label>การอ่านเขียน</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="read_write" value="{{$talentstudent->read_write}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-6">
                                                     <div class="form-group form-group-default">
                                                         <label>นักเรียนไม่เข้าใจบทเรียนทุกวิชา</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="understand" value="{{$talentstudent->understand}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -785,25 +787,25 @@
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>การเดินทางมาโรงเรียน</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="go_school" value="{{$studentdetail->go_school}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>ระยะเวลาเดินทาง (นาที)</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="go_school_time" value="{{$studentdetail->go_school_time}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>ระยะห่างจาก ร.ร. (ลูกรัง) เมตร</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="distance" value="{{$studentdetail->distance}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>ระยะห่างจาก ร.ร. (ลาดยาง) เมตร</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="long_distance" value="{{$studentdetail->long_distance}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -814,13 +816,13 @@
                                                 <div class="col-sm-6 col-md-6">
                                                     <div class="form-group form-group-default">
                                                         <label>อุปกรณ์ที่มี </label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="gadject" value="{{$studentdetail->gadject}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-6">
                                                     <div class="form-group form-group-default">
                                                         <label>อินเตอร์เน็ตที่ใช้ </label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="internet" value="{{$studentdetail->internet}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -831,13 +833,13 @@
                                                 <div class="col-6 col-md-6">
                                                     <div class="form-group form-group-default">
                                                         <label>ความพิการ</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="disabled" value="{{$studentdetail->disabled}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-6">
                                                     <div class="form-group form-group-default">
                                                         <label>ความด้อยโอกาส</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="unfortuned" value="{{$studentdetail->unfortuned}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -845,7 +847,7 @@
                                                 <div class="col-sm-6 col-md-12">
                                                     <div class="form-group form-group-default">
                                                         <label>ความขาดแคลน</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="lack" value="{{$studentdetail->lack}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -853,37 +855,37 @@
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>นักเรียนคบเพื่อนที่เกี่ยวข้องกับสิ่งเสพติด</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="friend_drug" value="{{$studentdetail->friend_drug}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>นักเรียนมีพฤติกรรมเสพยาหรือจำหน่ายสิ่งเสพติด</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="sell_drug" value="{{$studentdetail->sell_drug}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>นักเรียนมีพฤติกรรมส่อไปในทางชู้สาว</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="sexual" value="{{$studentdetail->sexual}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>นักเรียนพักหรืออาศัยอยู่กับเพื่อนต่างเพศที่มิใช่ญาติพี่น้อง</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="not_parent" value="{{$studentdetail->not_parent}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>นักเรียนชอบเที่ยวกลางคืน</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="dark_travel" value="{{$studentdetail->dark_travel}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>นักเรียนเคยถูกล่วงละเมิดทางเพศ</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="sexual_harrasment" value="{{$studentdetail->sexual_harrasment}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -891,13 +893,13 @@
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>นักเรียนรู้สึกว่าโลกนี้</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="cute_world" value="{{$studentdetail->cute_world}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>นักเรียนรู้สึกว่าตัวเอง</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="rich_man" value="{{$studentdetail->rich_man}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -905,13 +907,13 @@
                                                 <div class="col-6 col-md-6">
                                                     <div class="form-group form-group-default">
                                                         <label>นักเรียนคิดว่าคนที่ดีควรมีลักษณะอย่างไร</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="good_guy" value="{{$studentdetail->good_guy}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-6">
                                                     <div class="form-group form-group-default">
                                                         <label>นักเรียนคิดว่าสังคมที่ดีควรมีลักษณะอย่างไร</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="social_good" value="{{$studentdetail->social_good}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -919,7 +921,7 @@
                                                 <div class="col-sm-6 col-md-12">
                                                     <div class="form-group form-group-default">
                                                         <label>ปัญหาเรื่องใด ที่นักเรียนกำลังประสบอยู่ในขณะนี้</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="problem" value="{{$studentdetail->problem}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -927,7 +929,7 @@
                                                 <div class="col-sm-6 col-md-12">
                                                     <div class="form-group form-group-default">
                                                         <label>ถ้าต้องการความช่วยเหลือ/ปรึกษา นักเรียนต้องการความช่วยเหลือ/ปรึกษา จากใคร</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="help" value="{{$studentdetail->help}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -939,13 +941,13 @@
                                                 <div class="col-6 col-md-6">
                                                     <div class="form-group form-group-default">
                                                         <label>น้ำหนัก</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="weight" value="{{$healtystudent->weight}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-6">
                                                     <div class="form-group form-group-default">
                                                         <label>ส่วนสูง</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="height" value="{{$healtystudent->height}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -953,25 +955,25 @@
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>โรคประจำตัว</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="disease" value="{{$healtystudent->disease}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>ยาที่แพ้</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="medicine_lose" value="{{$healtystudent->medicine_lose}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>ยาที่ต้องรับประทานประจำ</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="medicine" value="{{$healtystudent->medicine}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>วิธีแก้ไขเมื่อเกิดอาการ</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="remedy" value="{{$healtystudent->remedy}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -979,7 +981,7 @@
                                                 <div class="col-sm-6 col-md-12">
                                                     <div class="form-group form-group-default">
                                                         <label>นักเรียนมีภาวะทางสายตา</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="glasses" value="{{$healtystudent->glasses}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -987,25 +989,25 @@
                                                 <div class="col-sm-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>นักเรียนสวมแว่นตา</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="danger" value="{{$healtystudent->danger}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>นักเรียนป่วยเป็นโรคร้ายแรงหรือเรื้อรัง</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="unsound" value="{{$healtystudent->unsound}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>นักเรียนมีความบกพร่องทางการได้ยิน</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="defective" value="{{$healtystudent->defective}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>นักเรียนมีความบกพร่องทางร่างกาย</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="sight_eye" value="{{$healtystudent->sight_eye}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1017,25 +1019,25 @@
                                                 <div class="col-sm-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>คำนำหน้าชื่อ</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="prename_f" value="{{$parentstudentModel->prename_f}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>ชื่อภาษาไทย</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="name_f" value="{{$parentstudentModel->name_f}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>ชื่อกลาง</label>
-                                                        <input type="text" class="form-control" placeholder="(ถ้ามี)">
+                                                        <input type="text" class="form-control" placeholder="(ถ้ามี)" name="name_cen_f" value="{{$parentstudentModel->name_cen_f}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>นามสกุลภาษาไทย</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="surname_f" value="{{$parentstudentModel->surname_f}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1043,25 +1045,25 @@
                                                 <div class="col-sm-4 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>เลขประจำตัวประชาชน</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="id_father" value="{{$parentstudentModel->id_father}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>ชนิดของบัตร</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="type_card_f" value="{{$parentstudentModel->type_card_f}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>อายุ</label>
-                                                        <input id="age_f" type="text" class="form-control" placeholder="">
+                                                        <input id="age_f" type="text" class="form-control" placeholder="" name="age_f" value="{{$parentstudentModel->age_f}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>หมู่เลือด</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="bloodgroup_f" value="{{$parentstudentModel->bloodgroup_f}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1069,19 +1071,19 @@
                                                 <div class="col-6 col-md-6">
                                                     <div class="form-group form-group-default">
                                                         <label>การประกอบอาชีพ</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="job_f" value="{{$parentstudentModel->job_f}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>รายได้ต่อเดือน (บาท)</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="salary_f" value="{{$parentstudentModel->salary_f}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>หมายเลขโทรศัพท์ที่สามารถติดต่อได้</label>
-                                                        <input type="text" class="form-control">
+                                                        <input type="text" class="form-control" name="tel_f" value="{{$parentstudentModel->tel_f}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1089,31 +1091,31 @@
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>บ้านเลขที่</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="house_number_f" value="{{$parentstudentModel->house_number_f}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>หมู่</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="group_f" value="{{$parentstudentModel->group_f}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>ชื่อหมู่บ้าน</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="village_f" value="{{$parentstudentModel->village_f}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>ซอย</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="alley_f" value="{{$parentstudentModel->alley_f}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>ถนน</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="street_f" value="{{$parentstudentModel->street_f}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1121,25 +1123,25 @@
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>ตำบล/แขวง</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="subdistrict_f" value="{{$parentstudentModel->subdistrict_f}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>อำเภอ/เขต</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="district_f" value="{{$parentstudentModel->district_f}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>จังหวัด</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="province_f" value="{{$parentstudentModel->province_f}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>รหัสไปรษณีย์</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="post_f" value="{{$parentstudentModel->post_f}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1152,25 +1154,25 @@
                                                 <div class="col-sm-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>คำนำหน้าชื่อ</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="prename_m" value="{{$parentstudentModel->prename_m}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>ชื่อภาษาไทย</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="name_m" value="{{$parentstudentModel->name_m}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>ชื่อกลาง</label>
-                                                        <input type="text" class="form-control" placeholder="(ถ้ามี)">
+                                                        <input type="text" class="form-control" placeholder="(ถ้ามี)" name="name_cen_m" value="{{$parentstudentModel->name_cen_m}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>นามสกุลภาษาไทย</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="surname_m" value="{{$parentstudentModel->surname_m}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1178,25 +1180,25 @@
                                                 <div class="col-sm-4 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>เลขประจำตัวประชาชน</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="id_mother" value="{{$parentstudentModel->id_mother}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>ชนิดของบัตร</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="type_card_m" value="{{$parentstudentModel->type_card_m}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>อายุ</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="age_m" value="{{$parentstudentModel->age_m}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>หมู่เลือด</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="bloodgroup_m" value="{{$parentstudentModel->bloodgroup_m}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1204,19 +1206,19 @@
                                                 <div class="col-6 col-md-6">
                                                     <div class="form-group form-group-default">
                                                         <label>การประกอบอาชีพ</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="job_m" value="{{$parentstudentModel->job_m}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>รายได้ต่อเดือน (บาท)</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="salary_m" value="{{$parentstudentModel->salary_m}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>หมายเลขโทรศัพท์ที่สามารถติดต่อได้</label>
-                                                        <input type="text" class="form-control">
+                                                        <input type="text" class="form-control" name="tel_m" value="{{$parentstudentModel->tel_m}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1224,31 +1226,31 @@
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>บ้านเลขที่</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="house_number_m" value="{{$parentstudentModel->house_number_m}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>หมู่</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="group_m" value="{{$parentstudentModel->group_m}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>ชื่อหมู่บ้าน</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="village_m" value="{{$parentstudentModel->village_m}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>ซอย</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="alley_m" value="{{$parentstudentModel->alley_m}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>ถนน</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="street_m" value="{{$parentstudentModel->street_m}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1256,25 +1258,25 @@
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>ตำบล/แขวง</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="subdistrict_m" value="{{$parentstudentModel->subdistrict_m}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>อำเภอ/เขต</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="district_m" value="{{$parentstudentModel->district_m}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>จังหวัด</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="province_m" value="{{$parentstudentModel->province_m}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>รหัสไปรษณีย์</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="post_m" value="{{$parentstudentModel->post_m}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1287,7 +1289,7 @@
                                                 <div class="col-sm-6 col-md-12">
                                                     <div class="form-group form-group-default">
                                                         <label>ผู้ปกครอง</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="parent" value="{{$parentstudentModel->parent}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1295,25 +1297,25 @@
                                                 <div class="col-sm-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>คำนำหน้าชื่อ</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="prename_p" value="{{$parentstudentModel->prename_p}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>ชื่อภาษาไทย</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="name_p" value="{{$parentstudentModel->name_p}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>ชื่อกลาง</label>
-                                                        <input type="text" class="form-control" placeholder="(ถ้ามี)">
+                                                        <input type="text" class="form-control" placeholder="(ถ้ามี)" name="name_cen_p" value="{{$parentstudentModel->name_cen_p}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>นามสกุลภาษาไทย</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="surname_p" value="{{$parentstudentModel->surname_p}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1321,25 +1323,25 @@
                                                 <div class="col-sm-4 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>เลขประจำตัวประชาชน</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="id_parent" value="{{$parentstudentModel->id_parent}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>ชนิดของบัตร</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="type_card_p" value="{{$parentstudentModel->type_card_p}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>อายุ</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="age_p" value="{{$parentstudentModel->age_p}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>ความสัมพันธ์ผู้ปกครอง</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="bloodgroup_p" value="{{$parentstudentModel->bloodgroup_p}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1347,19 +1349,19 @@
                                                 <div class="col-6 col-md-6">
                                                     <div class="form-group form-group-default">
                                                         <label>การประกอบอาชีพ</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="job_p" value="{{$parentstudentModel->job_p}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>รายได้ต่อเดือน (บาท)</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="salary_p" value="{{$parentstudentModel->salary_p}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>หมายเลขโทรศัพท์ที่สามารถติดต่อได้</label>
-                                                        <input type="text" class="form-control">
+                                                        <input type="text" class="form-control" name="tel_p" value="{{$parentstudentModel->tel_p}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1367,31 +1369,31 @@
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>บ้านเลขที่</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="house_number_p" value="{{$parentstudentModel->house_number_p}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>หมู่</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="group_p" value="{{$parentstudentModel->group_p}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>ชื่อหมู่บ้าน</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="village_p" value="{{$parentstudentModel->village_p}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>ซอย</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="alley_p" value="{{$parentstudentModel->alley_p}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>ถนน</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="street_p" value="{{$parentstudentModel->street_p}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1399,25 +1401,25 @@
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>ตำบล/แขวง</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="subdistrict_p" value="{{$parentstudentModel->subdistrict_p}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>อำเภอ/เขต</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="district_p" value="{{$parentstudentModel->district_p}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>จังหวัด</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="province_p" value="{{$parentstudentModel->province_p}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>รหัสไปรษณีย์</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="post_p" value="{{$parentstudentModel->post_p}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1430,13 +1432,13 @@
                                                 <div class="col-6 col-md-8">
                                                     <div class="form-group form-group-default">
                                                         <label>สถานภาพสมรสของบิดามารดา</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="status_parent" value="{{$parentstudentModel->status_parent}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>สถานะผู้ปกครองนักเรียน</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="student_parent" value="{{$parentstudentModel->student_parent}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1444,31 +1446,31 @@
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>จำนวนพี่น้อง ร่วมสายโลหิต</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="no_blood" value="{{$parentstudentModel->no_blood}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>จำนวนพี่ชาย</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="no_brother" value="{{$parentstudentModel->no_brother}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>จำนวนน้องชาย</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="no_son" value="{{$parentstudentModel->no_son}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>จำนวนพี่สาว</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="no_sister" value="{{$parentstudentModel->no_sister}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>จำนวนน้องสาว</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="no_son2" value="{{$parentstudentModel->no_son2}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1476,25 +1478,25 @@
                                                 <div class="col-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>นักเรียนเป็นบุตรคนที่</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="no_parent" value="{{$parentstudentModel->no_parent}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>จำนวนพี่น้องที่ศึกษาอยู่ (ไม่นับรวมนักเรียน)</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="no_study" value="{{$parentstudentModel->no_study}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>จำนวนพี่น้องที่ประกอบอาชีพแล้ว</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="no_job" value="{{$parentstudentModel->no_job}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>จำนวนพี่น้องที่อยู่ในความอุปการะของครอบครัว</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="no_house" value="{{$parentstudentModel->no_house}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1502,13 +1504,13 @@
                                                 <div class="col-sm-6 col-md-9">
                                                     <div class="form-group form-group-default">
                                                         <label>นักเรียนมีหน้าที่รับผิดชอบภายในบ้าน นอกเหนือจากการเรียน</label>
-                                                        <input type="text" class="form-control">
+                                                        <input type="text" class="form-control" name="student_job" value="{{$parentstudentModel->student_job}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-3">
                                                     <div class="form-group form-group-default">
                                                         <label>นักเรียนนำเงินมาโรงเรียนวันละ (บาท)</label>
-                                                        <input type="text" class="form-control">
+                                                        <input type="text" class="form-control" name="student_money" value="{{$parentstudentModel->student_money}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1516,19 +1518,19 @@
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="form-group form-group-default">
                                                         <label>รายได้ของครอบครัวต่อเดือน (รายได้รวมกัน)</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="parent_money" value="{{$parentstudentModel->parent_money}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-6">
                                                     <div class="form-group form-group-default">
                                                         <label>ผู้ออกค่าใช้จ่ายให้นักเรียน (ชื่อ-นามสกุล)</label>
-                                                        <input type="text" class="form-control">
+                                                        <input type="text" class="form-control" name="parent_total" value="{{$parentstudentModel->parent_total}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-2">
                                                     <div class="form-group form-group-default">
                                                         <label>เกี่ยวข้องเป็น</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="parent_house" value="{{$parentstudentModel->parent_house}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1536,32 +1538,27 @@
                                                 <div class="col-sm-6 col-md-12">
                                                     <div class="form-group form-group-default">
                                                         <label>การหารายได้ด้วยตนเอง</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="" name="job_study" value="{{$parentstudentModel->job_study}}">
                                                     </div>
                                                     <div class="form-group form-group-default">
                                                         <label>โปรดระบุ (หารายได้จากอะไร)</label>
-                                                        <input type="text" class="form-control">
+                                                        <input type="text" class="form-control" name="job_detail" value="{{$parentstudentModel->job_detail}}">
                                                     </div>
                                                     <div class="form-group form-group-default">
                                                         <label>รายได้เฉลี่ยวันละ (บาท)</label>
-                                                        <input type="text" class="form-control">
+                                                        <input type="text" class="form-control" name="total_study" value="{{$parentstudentModel->total_study}}">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="card-footer" align="center">
-
-                                            <p style="text-align:center">นักเรียนโปรดตรวจสอบข้อมูลพื้นฐานนักเรียนที่กรอกให้ถูกต้อง<br>
-                                                เมื่อนักเรียนมั่นใจแล้วให้กดปุ่ม &nbsp;<b>&quot;ยืนยัน&quot;</b>&nbsp; หากต้องการกลับไปหน้าก่อนให้กดปุ่ม &nbsp;<b>&quot;ย้อนกลับ&quot;</b>&nbsp; ด้านล่าง</p>
-                                            <button type="button" class="btn btn-danger" wire:click="backstep()"><strong>ย้อนกลับ</strong></button>
-                                            <button type="submit" class="btn btn-success"><strong>ยืนยัน</strong></button>
-
+                                            <button type="submit" class="btn btn-success"><strong>ยืนยันแก้ไขข้อมูล</strong></button>
+                                            <a href="http://127.0.0.1:8000/StudentCore" type="button" class="btn btn-danger"><strong>ย้อนกลับ</strong></a>
                                         </div><br>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                 </form>
 
             </div>

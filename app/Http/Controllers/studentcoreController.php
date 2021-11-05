@@ -26,7 +26,34 @@ class studentcoreController extends Controller
         $talentstudent = talentstudentModel::find($id);
         $studentdetail = studentdetailModel::find($id);
         $parentstudentModel = parentstudentModel::find($id);
-        return view('Studentcore.studentcorebyID', compact('$studentcore','$addressstudent','$healtystudent','$talentstudent','$studentdetail','parentstudentModel'));
+        return view('Studentcore.studentcorebyID', compact('studentcore','addressstudent','healtystudent','talentstudent','studentdetail','parentstudentModel'));
+    }
+
+    public function edit($id){
+        $studentcore = studentcoreModels::find($id);
+        $addressstudent = addressstudentModel::find($id);
+        $healtystudent = healtystudentModel::find($id);
+        $talentstudent = talentstudentModel::find($id);
+        $studentdetail = studentdetailModel::find($id);
+        $parentstudentModel = parentstudentModel::find($id);
+        return view('Studentcore.fixprofilestudentcore', compact('studentcore','addressstudent','healtystudent','talentstudent','studentdetail','parentstudentModel'));
+    }
+
+    public function update(Request $request, $id){
+        $studentcore = studentcoreModels::find($id);
+        $addressstudent = addressstudentModel::find($id);
+        $healtystudent = healtystudentModel::find($id);
+        $talentstudent = talentstudentModel::find($id);
+        $studentdetail = studentdetailModel::find($id);
+        $parentstudentModel = parentstudentModel::find($id);
+
+        $studentcore->update($request->all());
+        $addressstudent->update($request->all());
+        $healtystudent->update($request->all());
+        $talentstudent->update($request->all());
+        $studentdetail->update($request->all());
+        $parentstudentModel->update($request->all());
+        return redirect()->route('StudentCore.index')->with('success','Updated Successfully');
     }
 
 
