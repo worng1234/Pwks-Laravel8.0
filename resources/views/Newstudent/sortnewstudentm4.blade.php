@@ -113,13 +113,13 @@
 					<ul class="nav nav-primary">
 
 						<li class="nav-item">
-							<a href="academic-index.html">
+							<a href="/">
 								<i class="fas fa-home"></i>
 								<p>หน้าหลัก</p>
 							</a>
 						</li>
 
-						<li class="nav-item">
+						<!-- <li class="nav-item">
 							<a data-toggle="collapse" href="#forms">
 								<i class="fas fa-user-graduate"></i>
 								<p>จัดการข้อมูลนักเรียน</p>
@@ -224,7 +224,7 @@
 									</li>
 								</ul>
 							</div>
-						</li>
+						</li> -->
 
                         <li class="nav-item active submenu">
 							<a data-toggle="collapse" href="#agree">
@@ -234,14 +234,13 @@
 							</a>
 							<div class="collapse show" id="agree">
 								<ul class="nav nav-collapse">
-									<li >
 									<li>
-										<a href="academic-new-info-tables-agree-m1.html">
+										<a href="{{ route('SortNewstudentM1.index')}}">
 											<span class="sub-item">ตรวจสอบรายชื่อผู้สมัครเข้าเรียนชั้นมัธยมศึกษาปีที่ 1</span>
 										</a>
 									</li>
 									<li class="active">
-										<a href="academic-new-info-tables-agree-m4.html">
+										<a href="{{ route('SortNewstudentM4.index')}}">
 											<span class="sub-item">ตรวจสอบรายชื่อผู้สมัครเข้าเรียนชั้นมัธยมศึกษาปีที่ 4</span>
 										</a>
 									</li>
@@ -294,18 +293,6 @@
 									<div class="form-group">
 										<form role="form" method="post" action="">
 											<div class="row">
-												<div class="col-6 col-md-2">
-													<div class="form-group form-group-default">
-														<label>คำนำหน้าชื่อ</label>
-														<select class="form-control" id="formGroupDefaultSelect">
-															<option>เลือก</option>
-															<option>เด็กชาย</option>
-															<option>เด็กหญิง</option>
-															<option>นาย</option>
-															<option>นางสาว</option>
-														</select>
-													</div>
-												</div>
 												<div class="col-6 col-md-3">
 													<div class="form-group form-group-default">
 														<label>ชื่อภาษาไทย</label>
@@ -315,6 +302,12 @@
 												<div class="col-6 col-md-3">
 													<div class="form-group form-group-default">
 														<label>นามสกุลภาษาไทย</label>
+														<input id="Name" type="text" class="form-control" placeholder="">
+													</div>
+												</div>
+												<div class="col-6 col-md-2">
+													<div class="form-group form-group-default">
+														<label>วิชาเอก</label>
 														<input id="Name" type="text" class="form-control" placeholder="">
 													</div>
 												</div>
@@ -348,14 +341,14 @@
                                                         @foreach ($data as $key => $value)
                                                         <tr>
                                                             <td>{{$value->prename}}{{$value->fname}} {{$value->name_cen}} {{$value->surname}}</td>
-                                                            <td>{{$value->final_school}}</td>
+                                                            <td align="center">{{$value->final_school}}</td>
                                                             <td>อันดับ 1 : {{$value->major_name1}} <br>
                                                                 อันดับ 2 : {{$value->major_name2}} <br>
                                                                 อันดับ 3 : {{$value->major_name3}} <br>
                                                                 อันดับ 4 : {{$value->major_name4}} <br></td>
-                                                            <td><a href="{{ route('SortNewstudentM4.show',$value->id)}}" class="btn btn-primary"><i class="fas fa-file-archive" ></i></a></td>
+                                                            <td align="center"><a href="{{ route('SortNewstudentM4.show',$value->id)}}" class="btn btn-primary btn-xs"><i class="fas fa-file-archive" ></i></a></td>
                                                             <td>{{$value->pic}}</td>
-                                                            <td><a href="{{ route('SortNewstudentM4.edit',$value->id)}}" class="btn btn-warning"><i class="fas fa-edit" ></i></a></td>
+                                                            <td align="center"><a  class="btn btn-danger btn-xs"><i class="fas fa-trash" style="color:white;"></i></a></td>
                                                         </tr>
                                                         @endforeach
 														<!-- อะไรไม่รู้ -->

@@ -9,7 +9,7 @@
                         <div class="card full-height">
                             <div class="card-header">
                                 <div class="card-head-row">
-                                    <div class="card-title"><i class="fas fa-id-card-alt"></i> &nbsp;&nbsp; ระบบบันทึกข้อมูลพื้นฐาน <i class="flaticon-right-arrow"></i> เพิ่มข้อมูล (1/6)</div>
+                                    <div class="card-title"><i class="fas fa-id-card-alt"></i> &nbsp;&nbsp; ข้อมูลนักเรียนพื้นฐาน <i class="flaticon-right-arrow"></i> เพิ่มข้อมูลนักเรียน (1/6)</div>
                                 </div>
                             </div>
 
@@ -337,7 +337,7 @@
                             <div class="card full-height">
                                 <div class="card-header">
                                     <div class="card-head-row">
-                                        <div class="card-title"><i class="fas fa-id-card-alt"></i> &nbsp;&nbsp; ระบบบันทึกข้อมูลพื้นฐาน <i class="flaticon-right-arrow"></i> เพิ่มข้อมูล (2/6)</div>
+                                        <div class="card-title"><i class="fas fa-id-card-alt"></i> &nbsp;&nbsp; ข้อมูลนักเรียนพื้นฐาน <i class="flaticon-right-arrow"></i> เพิ่มข้อมูลนักเรียน (2/6)</div>
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -502,7 +502,7 @@
                                 <div class="card full-height">
                                     <div class="card-header">
                                         <div class="card-head-row">
-                                            <div class="card-title"><i class="fas fa-id-card-alt"></i> &nbsp;&nbsp; ระบบบันทึกข้อมูลพื้นฐาน <i class="flaticon-right-arrow"></i> เพิ่มข้อมูล (3/6)</div>
+                                            <div class="card-title"><i class="fas fa-id-card-alt"></i> &nbsp;&nbsp; ข้อมูลนักเรียนพื้นฐาน <i class="flaticon-right-arrow"></i> เพิ่มข้อมูลนักเรียน (3/6)</div>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -704,7 +704,7 @@
                                     <div class="card full-height">
                                         <div class="card-header">
                                             <div class="card-head-row">
-                                                <div class="card-title"><i class="fas fa-id-card-alt"></i> &nbsp;&nbsp; ระบบบันทึกข้อมูลพื้นฐาน <i class="flaticon-right-arrow"></i> เพิ่มข้อมูล (4/6)</div>
+                                                <div class="card-title"><i class="fas fa-id-card-alt"></i> &nbsp;&nbsp; ข้อมูลนักเรียนพื้นฐาน <i class="flaticon-right-arrow"></i> เพิ่มข้อมูลนักเรียน (4/6)</div>
                                             </div>
                                         </div>
                                         <div class="card-body">
@@ -1101,7 +1101,7 @@
                                         <div class="card full-height">
                                             <div class="card-header">
                                                 <div class="card-head-row">
-                                                    <div class="card-title"><i class="fas fa-id-card-alt"></i> &nbsp;&nbsp; ระบบบันทึกข้อมูลพื้นฐาน <i class="flaticon-right-arrow"></i> เพิ่มข้อมูล (5/6)</div>
+                                                    <div class="card-title"><i class="fas fa-id-card-alt"></i> &nbsp;&nbsp; ข้อมูลนักเรียนพื้นฐาน <i class="flaticon-right-arrow"></i> เพิ่มข้อมูลนักเรียน (5/6)</div>
                                                 </div>
                                             </div>
                                             <div class="card-body">
@@ -1266,7 +1266,7 @@
                                             <div class="card full-height">
                                                 <div class="card-header">
                                                     <div class="card-head-row">
-                                                        <div class="card-title"><i class="fas fa-id-card-alt"></i> &nbsp;&nbsp; ระบบบันทึกข้อมูลพื้นฐาน <i class="flaticon-right-arrow"></i> เพิ่มข้อมูล (6/6)</div>
+                                                        <div class="card-title"><i class="fas fa-id-card-alt"></i> &nbsp;&nbsp; ข้อมูลนักเรียนพื้นฐาน <i class="flaticon-right-arrow"></i> เพิ่มข้อมูลนักเรียน (6/6)</div>
                                                     </div>
                                                 </div>
                                                 <div class="card-body">

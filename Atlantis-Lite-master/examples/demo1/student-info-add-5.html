@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>ระบบบริหารจัดการข้อมูลทางการศึกษา โรงเรียนพร้าววิทยาคม</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
@@ -30,7 +31,7 @@
 		<div class="main-header">
 			<!-- Logo Header -->
 			<div class="logo-header" data-background-color="white">
-
+				
 				<a href="student-index.html" class="logo">
 					<img src="../assets/img/logo3.png" alt="navbar brand" class="navbar-brand" style="width: 100%; height: 75%;">
 				</a>
@@ -61,17 +62,24 @@
                             <a class="nav-link" data-toggle="collapse" href="#search-nav" role="button" aria-expanded="false" aria-controls="search-nav">
                                 <i class="fas fa-school"></i>
                             </a>
-                        </li>
+                        </li>	
+						
+						<li class="nav-item dropdown hidden-caret">
+							<a class="dropdown-toggle profile-pic" href="index.html" aria-expanded="false">
+								<i class="fas fa-unlock"></i> ออกระบบ
+							</a>
+						</li>
+						
                     </ul>
 				</div>
 			</nav>
 			<!-- End Navbar -->
-
+			
 		</div>
 		<!-- // End main-header -->
 
 		<!-- Sidebar -->
-		<div class="sidebar sidebar-style-2">
+		<div class="sidebar sidebar-style-2">			
 			<div class="sidebar-wrapper scrollbar scrollbar-inner">
 				<div class="sidebar-content">
 
@@ -83,8 +91,8 @@
 							<label><b>เลขประจำตัวนักเรียน :</b> 50190</label>
 							<label><b>ชั้นมัธยมศึกษาปีที่ :</b> 5 <b>ห้อง:</b> 2</label>
 							<label><b>ภาคเรียนที่ :</b> 1/2565</label>
-
-
+							
+							
 							<div class="clearfix"></div>
 						</div>
 					</div>
@@ -92,7 +100,7 @@
 
 					<!-- เริ่มเมนู -->
 					<ul class="nav nav-primary">
-
+						
 						<li class="nav-item">
 							<a href="student-index.html">
 								<i class="fas fa-home"></i>
@@ -138,21 +146,13 @@
 								<p>ติดต่อเรา</p>
 							</a>
 						</li>
-
-						<li class="nav-item">
-							<a href="widgets.html">
-								<i class="fas fa-desktop"></i>
-								<p>ต้นฉบับ</p>
-								<span class="badge badge-success">4</span>
-							</a>
-						</li>
-
+					
 					</ul>
 				</div>
 			</div>
 		</div>
 		<!-- สิ้นสุดเมนู -->
-
+		
 		<!-- เริ่มเนื้อหา-->
 		<div class="main-panel">
 			<div class="content">
@@ -176,28 +176,28 @@
 									</div>
 								</div>
 
-								<!-- สุขภาพ -->
+								<!-- ความสามารถ -->
 								<div class="card-body">
-									<div class="alert alert-info" role="alert" align="center"><h5><i class="fas fa-info-circle"></i>
+									<div class="alert alert-info" role="alert" align="center"><h5><i class="fas fa-info-circle"></i> 
 										กรุณากรอกข้อมูลตามความเป็นจริงก่อนบันทึกข้อมูลเพื่อผลประโยชน์ของนักเรียนในการใช้ขอทุน หรือตรวจสอบปัจจัยต่างๆที่จะได้รับ</h5></div>
-
-
+										
+									
 									<div style="border-radius: 5px; background-color: #8B469B; margin-bottom: 15px; color: white;">
                                         <p  style="margin-left: 25px;  font-size: 15px;"><b>ข้อมูลสุขภาพ</b></p>
                                     </div>
-
+									
                                     <div class="row">
 										<div class="col-6 col-md-6">
                                             <div class="form-group form-group-default">
                                                 <label>น้ำหนัก</label>
                                                 <input id="Name" type="text" class="form-control" placeholder="">
-                                            </div>
+                                            </div> 
                                         </div>
                                         <div class="col-6 col-md-6">
                                             <div class="form-group form-group-default">
                                                 <label>ส่วนสูง</label>
                                                 <input id="Name" type="text" class="form-control" placeholder="">
-                                            </div>
+                                            </div> 
                                         </div>
                                     </div>
                                     <div class="row">
@@ -205,25 +205,25 @@
                                             <div class="form-group form-group-default">
                                                 <label>โรคประจำตัว</label>
                                                 <input id="Name" type="text" class="form-control" placeholder="">
-                                            </div>
+                                            </div> 
                                         </div>
                                         <div class="col-6 col-md-3">
                                             <div class="form-group form-group-default">
                                                 <label>ยาที่แพ้</label>
                                                 <input id="Name" type="text" class="form-control" placeholder="">
-                                            </div>
+                                            </div> 
                                         </div>
                                         <div class="col-6 col-md-3">
                                             <div class="form-group form-group-default">
                                                 <label>ยาที่ต้องรับประทานประจำ</label>
                                                 <input id="Name" type="text" class="form-control" placeholder="">
-                                            </div>
+                                            </div> 
                                         </div>
                                         <div class="col-6 col-md-3">
                                             <div class="form-group form-group-default">
                                                 <label>วิธีแก้ไขเมื่อเกิดอาการ</label>
                                                 <input id="Name" type="text" class="form-control" placeholder="">
-                                            </div>
+                                            </div> 
                                         </div>
                                     </div>
                                     <div class="row">
@@ -321,10 +321,10 @@
 											</div>
                                         </div>
                                     </div>
-
-
-
-
+									
+								
+									
+									
 
 
 
@@ -352,7 +352,7 @@
 				<div class="container-fluid">
 					<nav class="pull-left">
 						<ul class="nav">
-
+							
 							<li class="nav-item">
 								<a class="nav-link" target="_blank">&copy; 2021 Phrao wittayakom School. | พัฒนาโดย PWK40 & CSMJU23</a>
 							</li>
@@ -360,7 +360,7 @@
 					</nav>
 					<div class="copyright ml-auto">
 						Theme by <a href="https://www.themekita.com" target="_blank">ThemeKita</a>
-					</div>
+					</div>						
 				</div>
 			</footer>
 		</div>

@@ -96,7 +96,7 @@
 					<ul class="nav nav-primary">
 
 						<li class="nav-item">
-							<a href="student-index.html">
+							<a href="/">
 								<i class="fas fa-home"></i>
 								<p>หน้าหลัก</p>
 							</a>
@@ -104,27 +104,111 @@
 
 						<li class="nav-item active submenu">
 							<a data-toggle="collapse" href="#forms">
-								<i class="fas fa-file-alt"></i>
-								<p>ระบบบันทึกข้อมูลพื้นฐาน</p>
+								<i class="fas fa-user-graduate"></i>
+								<p>จัดการข้อมูลนักเรียน</p>
 								<span class="caret"></span>
 							</a>
 							<div class="collapse show" id="forms">
 								<ul class="nav nav-collapse">
-									<li class="active">
-										<a href="student-info-add-1.html">
-											<span class="sub-item">เพิ่มข้อมูล</span>
-										</a>
-									</li>
 									<li>
-										<a href="#">
-											<span class="sub-item">แก้ไขข้อมูล</span>
+										<a data-toggle="collapse" href="#forms1">
+											<span class="sub-item">ข้อมูลนักเรียนพื้นฐาน</span>
+											<span class="caret"></span>
 										</a>
+										<div class="collapse show" id="forms1">
+											<ul class="nav nav-collapse subnav">
+												<li >
+													<a href="{{ route('StudentCore.index') }}">
+														<span class="sub-item">แสดงข้อมูลนักเรียน</span>
+													</a>
+												</li>
+												<li class="active">
+													<a href="/AddstudentCore">
+														<span class="sub-item">เพิ่มข้อมูลนักเรียน</span>
+													</a>
+												</li>
+											</ul>
+										</div>
 									</li>
+
+									<!-- <li>
+										<a data-toggle="collapse" href="#forms2">
+											<span class="sub-item">เลื่อนชั้นเรียน</span>
+											<span class="caret"></span>
+										</a>
+										<div class="collapse" id="forms2">
+											<ul class="nav nav-collapse subnav">
+												<li>
+													<a href="#">
+														<span class="sub-item">แสดงข้อมูลเลื่อนชั้นเรียน</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+
 									<li>
-										<a href="#">
-											<span class="sub-item">ตรวจสอบข้อมูล</span>
+										<a data-toggle="collapse" href="#forms3">
+											<span class="sub-item">จบการศึกษา</span>
+											<span class="caret"></span>
 										</a>
+										<div class="collapse" id="forms3">
+											<ul class="nav nav-collapse subnav">
+												<li>
+													<a href="academic-graduated-all.html">
+														<span class="sub-item">แสดงข้อมูลจบการศึกษา</span>
+													</a>
+												</li>
+												<li>
+													<a href="academic-graduated-all.html">
+														<span class="sub-item">เพิ่มนักเรียนจบการศึกษา</span>
+													</a>
+												</li>
+											</ul>
+										</div>
 									</li>
+
+									<li>
+										<a data-toggle="collapse" href="#forms4">
+											<span class="sub-item">ย้ายสถานศึกษา</span>
+											<span class="caret"></span>
+										</a>
+										<div class="collapse" id="forms4">
+											<ul class="nav nav-collapse subnav">
+												<li>
+													<a href="academic-move-all.html">
+														<span class="sub-item">แสดงข้อมูลย้ายสถานศึกษา</span>
+													</a>
+												</li>
+												<li>
+													<a href="academic-move-add.html">
+														<span class="sub-item">เพิ่มนักเรียนย้ายสถานศึกษา</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+
+									<li>
+										<a data-toggle="collapse" href="#forms5">
+											<span class="sub-item">ออกกลางคัน</span>
+											<span class="caret"></span>
+										</a>
+										<div class="collapse" id="forms5">
+											<ul class="nav nav-collapse subnav">
+												<li>
+													<a href="academic-out-all.html">
+														<span class="sub-item">แสดงข้อมูลออกกลางคัน</span>
+													</a>
+												</li>
+												<li>
+													<a href="academic-out-add.html">
+														<span class="sub-item">เพิ่มนักเรียนออกกลางคัน</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li> -->
 								</ul>
 							</div>
 						</li>

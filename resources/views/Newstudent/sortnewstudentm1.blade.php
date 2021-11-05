@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>ระบบบริหารจัดการข้อมูลทางการศึกษา โรงเรียนพร้าววิทยาคม</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-	<link rel="icon" href="/assets/img/logo3.png" type="image/x-icon"/>
+	<link rel="icon" href="../assets/img/icon.ico" type="image/x-icon"/>
 
 	<!-- Fonts and icons -->
 	<script src="../assets/js/plugin/webfont/webfont.min.js"></script>
@@ -38,12 +39,11 @@
 	</style>
 
 	<!-- CSS Files -->
-	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/assets/css/atlantis.min.css">
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/atlantis.min.css">
 
 	<!-- CSS Just for demo purpose, don't include it in your project -->
-	<link rel="stylesheet" href="/assets/css/demo.css">
-
+	<link rel="stylesheet" href="../assets/css/demo.css">
 </head>
 <body>
 	<div class="wrapper">
@@ -51,8 +51,8 @@
 			<!-- Logo Header -->
 			<div class="logo-header" data-background-color="white">
 
-				<a href="index.html" class="logo">
-					<img src="/assets/img/logo3.png" alt="navbar brand" class="navbar-brand" style="width: 100%; height: 75%;">
+				<a href="academic-index.html" class="logo">
+					<img src="../assets/img/logo3.png" alt="navbar brand" class="navbar-brand" style="width: 100%; height: 75%;">
 				</a>
 				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon">
@@ -113,13 +113,13 @@
 					<ul class="nav nav-primary">
 
 						<li class="nav-item">
-							<a href="academic-index.html">
+							<a href="/">
 								<i class="fas fa-home"></i>
 								<p>หน้าหลัก</p>
 							</a>
 						</li>
 
-						<li class="nav-item">
+						<!-- <li class="nav-item">
 							<a data-toggle="collapse" href="#forms">
 								<i class="fas fa-user-graduate"></i>
 								<p>จัดการข้อมูลนักเรียน</p>
@@ -140,7 +140,7 @@
 													</a>
 												</li>
 												<li>
-													<a href="#">
+													<a href="academic-info-add.html">
 														<span class="sub-item">เพิ่มข้อมูลนักเรียน</span>
 													</a>
 												</li>
@@ -155,7 +155,7 @@
 										<div class="collapse" id="forms2">
 											<ul class="nav nav-collapse subnav">
 												<li>
-													<a href="">
+													<a href="#">
 														<span class="sub-item">แสดงข้อมูลเลื่อนชั้นเรียน</span>
 													</a>
 												</li>
@@ -170,12 +170,12 @@
 										<div class="collapse" id="forms3">
 											<ul class="nav nav-collapse subnav">
 												<li>
-													<a href="#">
+													<a href="academic-graduated-all.html">
 														<span class="sub-item">แสดงข้อมูลจบการศึกษา</span>
 													</a>
 												</li>
 												<li>
-													<a href="#">
+													<a href="academic-graduated-add.html">
 														<span class="sub-item">เพิ่มนักเรียนจบการศึกษา</span>
 													</a>
 												</li>
@@ -190,12 +190,12 @@
 										<div class="collapse" id="forms4">
 											<ul class="nav nav-collapse subnav">
 												<li>
-													<a href="#">
+													<a href="academic-move-all.html">
 														<span class="sub-item">แสดงข้อมูลย้ายสถานศึกษา</span>
 													</a>
 												</li>
 												<li>
-													<a href="#">
+													<a href="academic-move-add.html">
 														<span class="sub-item">เพิ่มนักเรียนย้ายสถานศึกษา</span>
 													</a>
 												</li>
@@ -210,12 +210,12 @@
 										<div class="collapse" id="forms5">
 											<ul class="nav nav-collapse subnav">
 												<li>
-													<a href="#">
+													<a href="academic-out-all.html">
 														<span class="sub-item">แสดงข้อมูลออกกลางคัน</span>
 													</a>
 												</li>
 												<li>
-													<a href="#">
+													<a href="academic-out-add.html">
 														<span class="sub-item">เพิ่มนักเรียนออกกลางคัน</span>
 													</a>
 												</li>
@@ -224,7 +224,7 @@
 									</li>
 								</ul>
 							</div>
-						</li>
+						</li> -->
 
                         <li class="nav-item active submenu">
 							<a data-toggle="collapse" href="#agree">
@@ -236,18 +236,40 @@
 								<ul class="nav nav-collapse">
 									<li >
 									<li class="active">
-										<a href="academic-new-info-tables-agree-m1.html">
+										<a href="{{ route('SortNewstudentM1.index')}}">
 											<span class="sub-item">ตรวจสอบรายชื่อผู้สมัครเข้าเรียนชั้นมัธยมศึกษาปีที่ 1</span>
 										</a>
 									</li>
 									<li>
-										<a href="academic-new-info-tables-agree-m4.html">
+										<a href="{{ route('SortNewstudentM4.index')}}">
 											<span class="sub-item">ตรวจสอบรายชื่อผู้สมัครเข้าเรียนชั้นมัธยมศึกษาปีที่ 4</span>
 										</a>
 									</li>
 								</ul>
 							</div>
 						</li>
+
+						<!-- <li class="nav-item">
+							<a data-toggle="collapse" href="#basic">
+								<i class="fas fa-sliders-h"></i>
+								<p>จัดการข้อมูลพื้นฐาน</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="basic">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="academic-basic-info-class-all.html">
+											<span class="sub-item">กำหนดชั้นเรียน</span>
+										</a>
+									</li>
+									<li>
+										<a href="academic-basic-info-year-all.html">
+											<span class="sub-item">กำหนดปีการศึกษา</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li> -->
 
 						<li class="nav-item ">
 							<a href="#">
@@ -280,7 +302,8 @@
 						</div>
 					</div>
 				</div>
-                <div class="page-inner mt--5">
+
+				<div class="page-inner mt--5">
 					<div class="row mt--2">
 						<div class="col-md-12">
 							<div class="card full-height">
@@ -294,25 +317,14 @@
 									<div class="form-group">
 										<form role="form" method="post" action="">
 											<div class="row">
-												<div class="col-6 col-md-2">
-													<div class="form-group form-group-default">
-														<label>คำนำหน้าชื่อ</label>
-														<select class="form-control" id="formGroupDefaultSelect">
-															<option>เลือก</option>
-															<option>เด็กชาย</option>
-															<option>เด็กหญิง</option>
-															<option>นาย</option>
-															<option>นางสาว</option>
-														</select>
-													</div>
-												</div>
-												<div class="col-6 col-md-3">
+
+												<div class="col-6 col-md-4">
 													<div class="form-group form-group-default">
 														<label>ชื่อภาษาไทย</label>
 														<input id="Name" type="text" class="form-control" placeholder="">
 													</div>
 												</div>
-												<div class="col-6 col-md-3">
+												<div class="col-6 col-md-4">
 													<div class="form-group form-group-default">
 														<label>นามสกุลภาษาไทย</label>
 														<input id="Name" type="text" class="form-control" placeholder="">
@@ -342,17 +354,19 @@
 
 															</tr>
 														</thead>
+
 														<tbody>
+                                                            @foreach ($datas as $key => $value)
+															<tr>
+                                                                <td>{{$value->prename}}{{$value->fname}} {{$value->nameCen}} {{$value->surname}}</td>
+                                                                <td align="center">{{$value->finalSchool}}</td>
+                                                                <td align="center"><a href="{{ route('SortNewstudentM1.show', $value->id)}}" class="btn btn-primary btn-xs"><i class="fas fa-edit"></i></a></td>
+                                                                <td align="center">{{$value->pic}}</td>
+                                                                <td align="center"><a href="{{ route('SortNewstudentM1.edit', $value->id)}}" class="btn btn-danger btn-xs"><i class="fas fa-trash"></i></a></td>
+															</tr>
+                                                            @endforeach
+
 														<!-- Modal Show Club Detail -->
-                                                        @foreach($datas as $key => $value)
-                                                        <tr>
-                                                            <td>{{$value->prename}}{{$value->fname}} {{$value->nameCen}} {{$value->surname}}</td>
-                                                            <td>{{$value->finalSchool}}</td>
-                                                            <td><a  href="{{ route('SortNewstudentM1.show',$value->id)}}" type="button" class="btn btn-primary"><i class="fas fa-file-archive" ></i></a></td>
-                                                            <td>{{$value->pic}}</td>
-                                                            <td><a href="{{ route('SortNewstudentM1.edit',$value->id)}}" class="btn btn-warning"><i class="fas fa-edit" ></i></a></td>
-                                                        </tr>
-                                                        @endforeach
 														<!-- อะไรไม่รู้ -->
 														<div class="modal fade" id="ModalShowDetail1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
 															<div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
@@ -376,7 +390,6 @@
 							</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
 			<!-- สิ้นสุดเนื้อหา -->
@@ -546,6 +559,5 @@
 			fillColor: 'rgba(255, 165, 52, .14)'
 		});
 	</script>
-
 </body>
 </html>

@@ -93,19 +93,14 @@
 					<ul class="nav nav-primary" >
 
 						<li class="nav-item">
-							<a href="index.html">
+							<a href="/">
 								<i class="fas fa-home"></i>
 								<p>หน้าหลัก</p>
 							</a>
 						</li>
-						<li class="nav-item">
-							<a href="login.html">
-								<i class="fas fa-lock"></i>
-								<p>เข้าระบบ</p>
-							</a>
-						</li>
 
-						<li class="nav-item active submenu">
+
+						<!-- <li class="nav-item active submenu">
 							<a data-toggle="collapse" href="#forms">
 								<i class="fas fa-id-card-alt"></i>
 								<p>รับสมัครนักเรียนใหม่</p>
@@ -125,6 +120,28 @@
 									</li>
 								</ul>
 							</div>
+						</li> -->
+                        <li class="nav-item active submenu">
+							<a data-toggle="collapse" href="#agree">
+								<i class="fas fa-id-card-alt"></i>
+								<p>จัดการข้อมูลนักเรียนใหม่</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse show" id="agree">
+								<ul class="nav nav-collapse">
+									<li >
+									<li class="active">
+										<a href="{{ route('SortNewstudentM1.index')}}">
+											<span class="sub-item">ตรวจสอบรายชื่อผู้สมัครเข้าเรียนชั้นมัธยมศึกษาปีที่ 1</span>
+										</a>
+									</li>
+									<li>
+										<a href="{{ route('SortNewstudentM4.index')}}">
+											<span class="sub-item">ตรวจสอบรายชื่อผู้สมัครเข้าเรียนชั้นมัธยมศึกษาปีที่ 4</span>
+										</a>
+									</li>
+								</ul>
+							</div>
 						</li>
 						<li class="nav-item ">
 							<a href="#">
@@ -139,13 +156,7 @@
 							</a>
 						</li>
 
-						<li class="nav-item">
-							<a href="widgets.html">
-								<i class="fas fa-desktop"></i>
-								<p>ต้นฉบับ</p>
-								<span class="badge badge-success">4</span>
-							</a>
-						</li>
+
 
 					</ul>
 				</div>
@@ -173,7 +184,7 @@
 							<div class="card full-height">
 								<div class="card-header">
 									<div class="card-head-row">
-										<div class="card-title"><i class="fas fa-id-card-alt"></i> &nbsp;&nbsp; รับสมัครนักเรียนใหม่ <i class="flaticon-right-arrow"></i> สมัครเข้าเรียนชั้นมัธยมศึกษาปีที่ 1</div>
+										<div class="card-title"><i class="fas fa-id-card-alt"></i> &nbsp;&nbsp; จัดการข้อมูลนักเรียนใหม่ <i class="flaticon-right-arrow"></i> ตรวจสอบรายชื่อผู้สมัครเข้าเรียนชั้นมัธยมศึกษาปีที่ 1</div>
 									</div>
 								</div>
 
@@ -575,8 +586,8 @@
 									</div>
 								</div>
 								<div class="card-footer" align="center">
-
-									<a href="{{ route('SortNewstudentM1.index')}}" class="btn btn-danger"><strong>ย้อนกลับ</strong></a>
+                                <a href="{{ route('SortNewstudentM1.edit', $data->id)}}" class="btn btn-warning "><strong>แก้ไขข้อมูล</strong></a>
+									<a href="{{ route('SortNewstudentM1.index')}}" class="btn btn-danger "><strong>ย้อนกลับ</strong></a>
 								</div><br>
 
 

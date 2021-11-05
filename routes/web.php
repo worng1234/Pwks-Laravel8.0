@@ -36,4 +36,5 @@ Route::resource('testup', TestUPController::class);
 
 //Studentcore
 Route::resource('/StudentCore', studentcoreController::class);
-Route::view('/StudentcoreBYID','Studentcore.studentcorebyID');
+
+

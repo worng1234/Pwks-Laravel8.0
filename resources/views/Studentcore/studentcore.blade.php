@@ -117,7 +117,7 @@
 					<ul class="nav nav-primary">
 
 						<li class="nav-item">
-							<a href="academic-index.html">
+							<a href="/">
 								<i class="fas fa-home"></i>
 								<p>หน้าหลัก</p>
 							</a>
@@ -139,12 +139,12 @@
 										<div class="collapse show" id="forms1">
 											<ul class="nav nav-collapse subnav">
 												<li class="active">
-													<a href="academic-info-all.html">
+													<a href="{{ route('StudentCore.index') }}">
 														<span class="sub-item">แสดงข้อมูลนักเรียน</span>
 													</a>
 												</li>
 												<li>
-													<a href="academic-info-add.html">
+													<a href="/AddstudentCore">
 														<span class="sub-item">เพิ่มข้อมูลนักเรียน</span>
 													</a>
 												</li>
@@ -152,7 +152,7 @@
 										</div>
 									</li>
 
-									<li>
+									<!-- <li>
 										<a data-toggle="collapse" href="#forms2">
 											<span class="sub-item">เลื่อนชั้นเรียน</span>
 											<span class="caret"></span>
@@ -229,29 +229,7 @@
 												</li>
 											</ul>
 										</div>
-									</li>
-								</ul>
-							</div>
-						</li>
-
-                        <li class="nav-item">
-							<a data-toggle="collapse" href="#agree">
-								<i class="fas fa-id-card-alt"></i>
-								<p>จัดการข้อมูลนักเรียนใหม่</p>
-								<span class="caret"></span>
-							</a>
-							<div class="collapse" id="agree">
-								<ul class="nav nav-collapse">
-									<li>
-										<a href="academic-new-info-tables-agree-m1.html">
-											<span class="sub-item">ตรวจสอบรายชื่อผู้สมัครเข้าเรียนชั้นมัธยมศึกษาปีที่ 1</span>
-										</a>
-									</li>
-									<li>
-										<a href="academic-new-info-tables-agree-m4.html">
-											<span class="sub-item">ตรวจสอบรายชื่อผู้สมัครเข้าเรียนชั้นมัธยมศึกษาปีที่ 4</span>
-										</a>
-									</li>
+									</li> -->
 								</ul>
 							</div>
 						</li>

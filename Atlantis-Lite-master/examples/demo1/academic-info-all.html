@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>ระบบบริหารจัดการข้อมูลทางการศึกษา โรงเรียนพร้าววิทยาคม</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-	<link rel="icon" href="/assets/img/icon.ico" type="image/x-icon"/>
+	<link rel="icon" href="../assets/img/icon.ico" type="image/x-icon"/>
 
 	<!-- Fonts and icons -->
 	<script src="../assets/js/plugin/webfont/webfont.min.js"></script>
@@ -29,12 +30,12 @@
 			width: 80%;
 		}
 		.bgimgheader {
-
+			
 			background-repeat: repeat;
-			background-position: center;
+			background-position: center; 
 			position: relative;
 		}
-
+		
 	</style>
 
 	<!-- CSS Files -->
@@ -49,9 +50,9 @@
 		<div class="main-header">
 			<!-- Logo Header -->
 			<div class="logo-header" data-background-color="white">
-
-				<a href="student-index.html" class="logo">
-					<img src="/assets/img/logo3.png" alt="navbar brand" class="navbar-brand" style="width: 100%; height: 75%;">
+				
+				<a href="academic-index.html" class="logo">
+					<img src="../assets/img/logo3.png" alt="navbar brand" class="navbar-brand" style="width: 100%; height: 75%;">
 				</a>
 				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon">
@@ -85,17 +86,17 @@
 							<a class="dropdown-toggle profile-pic" href="index.html" aria-expanded="false">
 								<i class="fas fa-unlock"></i> ออกระบบ
 							</a>
-						</li>
+						</li>					
                     </ul>
 				</div>
 			</nav>
 			<!-- End Navbar -->
-
+			
 		</div>
 		<!-- // End main-header -->
 
 		<!-- Sidebar -->
-		<div class="sidebar sidebar-style-2">
+		<div class="sidebar sidebar-style-2">			
 			<div class="sidebar-wrapper scrollbar scrollbar-inner">
 				<div class="sidebar-content">
 
@@ -106,8 +107,8 @@
 							<label><b>ชื่อ-นามสกุล :</b> ทำงานดี มีเมตตา</label>
 							<label><b>ตำแหน่ง :</b> ลูกจ้างประจำ (พนักงานธุรการ)</label>
 							<label><b>ภาคเรียนที่ :</b> 1/2565</label>
-
-
+							
+							
 							<div class="clearfix"></div>
 						</div>
 					</div>
@@ -115,7 +116,7 @@
 
 					<!-- เริ่มเมนู -->
 					<ul class="nav nav-primary">
-
+						
 						<li class="nav-item">
 							<a href="academic-index.html">
 								<i class="fas fa-home"></i>
@@ -181,7 +182,7 @@
 													</a>
 												</li>
 												<li>
-													<a href="academic-graduated-all.html">
+													<a href="academic-graduated-add.html">
 														<span class="sub-item">เพิ่มนักเรียนจบการศึกษา</span>
 													</a>
 												</li>
@@ -209,7 +210,7 @@
 											</ul>
 										</div>
 									</li>
-
+									
 									<li>
 										<a data-toggle="collapse" href="#forms5">
 											<span class="sub-item">ออกกลางคัน</span>
@@ -256,6 +257,28 @@
 							</div>
 						</li>
 
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#basic">
+								<i class="fas fa-sliders-h"></i>
+								<p>จัดการข้อมูลพื้นฐาน</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="basic">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="academic-basic-info-class-all.html">
+											<span class="sub-item">กำหนดชั้นเรียน</span>
+										</a>
+									</li>
+									<li>
+										<a href="academic-basic-info-year-all.html">
+											<span class="sub-item">กำหนดปีการศึกษา</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
 						<li class="nav-item ">
 							<a href="#">
 								<i class="fas fa-book-open"></i>
@@ -268,13 +291,13 @@
 								<p>ติดต่อเรา</p>
 							</a>
 						</li>
-
+		
 					</ul>
 				</div>
 			</div>
 		</div>
 		<!-- สิ้นสุดเมนู -->
-
+		
 		<!-- เริ่มเนื้อหา-->
 		<div class="main-panel">
 			<div class="content">
@@ -305,7 +328,7 @@
 									<div class="form-group">
 										<form role="form" method="post"  action="">
 											<div class="row">
-
+												
 												<div class="col-6 col-md-3">
 													<div class="form-group form-group-default">
 														<label>ระดับชั้น</label>
@@ -334,29 +357,28 @@
 													<div class="form-group form-group-default">
 														<label>สามารถค้นหาจากชื่อ-นามสกุล, เลขประจำตัวนักเรียน</label>
 														<input id="Name" type="text" class="form-control" placeholder="">
-													</div>
+													</div> 
 												</div>
 												<button type="submit" class="btn btn-primary form-group form-group-default col-sm-6 col-md-1" ><i class="fas fa-search"></i> แสดง</button>
 											</div>
 										</form>
 									</div>
-
+									
 									<div class="table-responsive" >
-
-
+										
+									
 												<!-- ตารางแสดงข้อมูล-->
 													<table id="basic-datatables" class="table table-bordered table-striped table-hover" style="width:100%">
 														<thead>
 															<tr>
 																<th scope="col" width="10%"><center>ลำดับ</center></th>
-																<th scope="col" width="14%"><center>เลขประจำตัวนักเรียน</center></th>
-																<th scope="col" width="8%"><center>เลขที่</center></th>
+																<th scope="col" width="15%"><center>เลขประจำตัวนักเรียน</center></th>
+																<th scope="col" width="9%"><center>เลขที่</center></th>
 																<th scope="col" width="26"><center>ชื่อ-นามสกุล</center></th>
-																<th scope="col" width="8%"><center>เพศ</center></th>
-																<th scope="col" width="14%"><center>ชั้นเรียน</center></th>
-																<th scope="col" width="8%"><center>ห้อง</center></th>
-																<th scope="col" width="12%"><center>จัดการ</center></th>
-
+																<th scope="col" width="16%"><center>ชั้นเรียน</center></th>
+																<th scope="col" width="9%"><center>ห้อง</center></th>
+																<th scope="col" width="15%"><center>จัดการ</center></th>
+																
 															</tr>
 														</thead>
 														<tbody>
@@ -365,18 +387,18 @@
 																<td align="center">50190</td>
 																<td align="center">1</td>
 																<td>นาย เรียนดี  มีเมตตา</td>
-																<td align="center">ชาย</td>
 																<td align="center">มัธยมศึกษาปีที่ 5</td>
 																<td align="center">2</td>
 																<td align="center">
 																	<form role="form" method="post" action="?r=admin_student_edit">
+																		<button type="submit" class="btn btn-warning btn-xs"><i class="fas fa-file-alt"></i></button>
 																		<button type="submit" class="btn btn-primary btn-xs"><i class="fas fa-edit"></i></button>
-																		<input type="hidden" name="hid" value="1" />
+																		<input type="hidden" name="hid" value="1">			
 																		<a href="" class="btn btn-danger btn-xs" title="" onclick="return confirm('Lorem ipsum dolor, sit amet consectet et adipis icing elit. Ab commodi iure minus laboriosam placeat quia, dolorem animi.')"> <i class="fas fa-trash"></i> </a>
 																	</form>
 																</td>
 															</tr>
-
+															
 														<!-- Modal Show Club Detail -->
 														<!-- อะไรไม่รู้ -->
 														<div class="modal fade" id="ModalShowDetail1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -391,11 +413,11 @@
 															</div>
 														</div>
 														<!-- // Modal Show Club Detail -->
-
+																									
 														</tbody>
 													</table>
 												<!-- //ตารางแสดงข้อมูล-->
-
+	
 									</div>
 								</div>
 							</div>
@@ -410,7 +432,7 @@
 				<div class="container-fluid">
 					<nav class="pull-left">
 						<ul class="nav">
-
+							
 							<li class="nav-item">
 								<a class="nav-link" target="_blank">&copy; 2021 Phrao wittayakom School. | พัฒนาโดย PWK40 & CSMJU23</a>
 							</li>
@@ -418,7 +440,7 @@
 					</nav>
 					<div class="copyright ml-auto">
 						Theme by <a href="https://www.themekita.com" target="_blank">ThemeKita</a>
-					</div>
+					</div>						
 				</div>
 			</footer>
 		</div>
@@ -475,7 +497,7 @@
 			});
 		});
 	</script>
-
+	
 	<script>
 		Circles.create({
 			id:'circles-1',
